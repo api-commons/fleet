@@ -1,7 +1,7 @@
 provider: fleetbase
 apis_io: https://apis.io/providers/fleetbase/
 context: fleet
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   vehicle:
     path_segment:

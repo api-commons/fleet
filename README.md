@@ -19,7 +19,7 @@ generated. Every number below is a count of providers.
 | geofence | 5 | 5 | id 100%, name 100%, description 60% | zones 3, geofence 2, geofences 1 |
 | inspection | 3 | 3 | id 100% | dvir 1, dvirs 1, inspection 1 |
 
-Cohort: 85 providers with harvested OpenAPI, 29 crosswalks. Of the providers exposing a vehicle: 55% create, 86% list, 69% fetch, 31% update, 31% delete. Generated 2026-11-10 by build.py.
+Cohort: 85 providers with harvested OpenAPI, 29 crosswalks. Of the providers exposing a vehicle: 55% create, 86% list, 69% fetch, 31% update, 31% delete. Generated 2026-11-11 by build.py.
 <!-- /commons:summary -->
 
 Shares are of the providers with a readable resource schema for that concept. The
