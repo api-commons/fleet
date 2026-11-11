@@ -8,8 +8,8 @@ concepts:
     - vehicles
     properties:
       id: id
-      status: status
       name: name
+      status: status
     core_coverage: 0.25
     evidence:
     - openapi/_original/workwave-openapi.yml#DELETE /territories/{territoryId}/vehicles

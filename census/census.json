@@ -137,11 +137,13 @@
      "GET collection"
     ],
     "properties": {
-     "status": "object",
-     "transaction": "object",
-     "product": "object",
-     "vehicles": "array",
-     "reservation": "object"
+     "category": "object",
+     "rental_experience": "object",
+     "features": "object",
+     "capacity": "object",
+     "rate_totals": "object",
+     "secondary_rate_totals": "object",
+     "distance": "object"
     },
     "evidence": [
      "openapi/_original/avis-budget-rental-cars-openapi.json#GET /cars/catalog/v2/vehicles",
@@ -261,8 +263,7 @@
      "vehicleVin": "string",
      "shiftName": "string",
      "routeName": "string",
-     "targetSoc": "integer",
-     "departureTimes": "array"
+     "targetSoc": "integer"
     },
     "evidence": [
      "openapi/_original/flipturn-openapi.yml#GET /vehicles",
@@ -357,24 +358,20 @@
      "GET item"
     ],
     "properties": {
-     "currentPage": "integer",
-     "pageSize": "integer",
-     "totalRecords": "integer",
-     "vehicles": "array",
      "vehicleId": "integer",
      "vin": "string",
      "deviceVin": "string",
      "odometer": "integer",
      "location": "object",
-     "totalCount": "integer",
      "id": "integer",
-     "groupId": "string",
      "name": "string",
+     "label": "string",
+     "groupId": "string",
      "status": "integer",
-     "lastCommunication": "string",
-     "devices": "array",
      "isWaking": "boolean",
      "wakeable": "boolean",
+     "lastCommunication": "string",
+     "devices": "array",
      "dcVehicleId": "string",
      "lastWakeAttempt": "string"
     },
@@ -478,23 +475,23 @@
      "PUT collection"
     ],
     "properties": {
-     "pagination": "object",
-     "vehicles": "array",
-     "createdVehicleIds": "array",
      "customAttributes": "object",
      "decommissionedOnDate": "string",
      "decommissioned": "boolean",
      "model": "string",
      "type": "string",
-     "description": "string",
-     "depotName": "string",
-     "regionName": "string",
+     "note": "string",
+     "loanedRegionPeriods": "array",
+     "mainRegionPeriod": "object",
      "parkingLocation": "string",
      "licensePlate": "string",
      "id": "string",
-     "warnings": "array",
-     "updatedVehicleIds": "array",
-     "mainRegionPeriod": "object",
+     "createdVehicleIds": "array",
+     "description": "string",
+     "depotName": "string",
+     "regionName": "string",
+     "details": "array",
+     "message": "string",
      "depot": "string",
      "opUnitId": "string",
      "nextDowntime": "number",
@@ -544,8 +541,16 @@
      "vin": "string",
      "assetId": "string",
      "template": null,
-     "geolocation": null,
-     "tires": "array"
+     "timestamp": "integer",
+     "tirePosition": null,
+     "sensorId": "string",
+     "pressure": "number",
+     "temperature": "number",
+     "treadClass": null,
+     "treadInMm": "number",
+     "tireTotalKm": "number",
+     "openEvents": "array",
+     "resolvedEvents": "array"
     },
     "evidence": [
      "openapi/_original/revvo-api-openapi-original.yml#GET /fleet/{fleetId}/vehicle/{vin}",
@@ -565,11 +570,10 @@
      "PATCH item"
     ],
     "properties": {
-     "month": "string",
-     "quarter": "string",
-     "troubleshooting": "object",
-     "vehicleReports": "array",
-     "year": "integer",
+     "jurisdiction": "string",
+     "taxPaidLiters": "number",
+     "taxableMeters": "number",
+     "totalMeters": "number",
      "attributes": "array",
      "auxInputType1": "string",
      "auxInputType10": "string",
@@ -607,6 +611,7 @@
      "vehicleWeightInKilograms": "integer",
      "vehicleWeightInPounds": "integer",
      "vin": "string",
+     "year": "string",
      "grossVehicleWeight": "object",
      "engineHours": "integer",
      "gatewaySerial": "string",
@@ -989,8 +994,6 @@
      "POST collection"
     ],
     "properties": {
-     "drivers": "array",
-     "nextPageToken": null,
      "id": null,
      "name": null,
      "email": null,
@@ -1185,9 +1188,6 @@
      "PUT collection"
     ],
     "properties": {
-     "pagination": "object",
-     "drivers": "array",
-     "createdDriverIds": "array",
      "customAttributes": "object",
      "union": "string",
      "grade": "string",
@@ -1197,16 +1197,19 @@
      "homeNumber": "string",
      "mobileNumber": "string",
      "avatar": "string",
-     "groupName": "string",
-     "depotName": "string",
-     "regionName": "string",
-     "startDate": "string",
+     "loanedRegionPeriods": "array",
+     "mainRegionPeriod": "object",
      "lastName": "string",
      "middleName": "string",
      "firstName": "string",
      "id": "string",
-     "warnings": "array",
-     "updatedDriverIds": "array",
+     "createdDriverIds": "array",
+     "groupName": "string",
+     "depotName": "string",
+     "regionName": "string",
+     "startDate": "string",
+     "details": "array",
+     "message": "string",
      "archived": "boolean",
      "note": "string",
      "uuid": "string",
@@ -1721,12 +1724,11 @@
      "GET item"
     ],
     "properties": {
-     "has_more": "boolean",
-     "journeys": "array",
      "end_date": "string",
-     "journey": "object",
      "journey_id": "integer",
-     "start_date": "string"
+     "start_date": "string",
+     "total_events": "integer",
+     "journey": "object"
     },
     "evidence": [
      "openapi/_original/blues-wireless-notehub-api-openapi.yml#GET /v1/projects/{projectOrProductUID}/devices/{deviceUID}/journeys",
@@ -2137,11 +2139,10 @@
      "id": "string",
      "location": "object",
      "name": "string",
-     "assets": "array",
-     "pagination": "object",
      "latitude": "number",
      "longitude": "number",
      "speedMilesPerHour": "number",
+     "timeMs": "number",
      "time": "number"
     },
     "evidence": [
@@ -2398,7 +2399,16 @@
      "IsEditable": "boolean",
      "GeofenceType": "integer",
      "Schedules": "array",
-     "VehicleId": "integer"
+     "Monday": "boolean",
+     "Tuesday": "boolean",
+     "Wednesday": "boolean",
+     "Thursday": "boolean",
+     "Friday": "boolean",
+     "Saturday": "boolean",
+     "Sunday": "boolean",
+     "StartTime": "object",
+     "EndTime": "object",
+     "GeofenceScheduleId": "integer"
     },
     "evidence": [
      "openapi/_original/automile-openapi-original.json#DELETE /v1/resourceowner/geofence/{geofenceId}",
@@ -2427,7 +2437,16 @@
      "IsEditable": "boolean",
      "GeofenceType": "integer",
      "Schedules": "array",
-     "VehicleId": "integer"
+     "Monday": "boolean",
+     "Tuesday": "boolean",
+     "Wednesday": "boolean",
+     "Thursday": "boolean",
+     "Friday": "boolean",
+     "Saturday": "boolean",
+     "Sunday": "boolean",
+     "StartTime": "object",
+     "EndTime": "object",
+     "GeofenceScheduleId": "integer"
     },
     "evidence": [
      "openapi/_original/automileab-openapi.json#DELETE /v1/resourceowner/geofence/{geofenceId}",
@@ -2480,8 +2499,8 @@
      "geometry": null,
      "created_at": "string",
      "updated_at": "string",
-     "device_summary": "object",
-     "blueprints": "array",
+     "blueprint_id": "string",
+     "blueprint_version_number": "integer",
      "content": "object"
     },
     "evidence": [
@@ -2514,6 +2533,12 @@
      "isActive": "boolean",
      "id": "string",
      "vendorId": "string",
+     "roadUserType": "array",
+     "triggerConditions": "array",
+     "limits": "array",
+     "distributionType": "array",
+     "distributionSchedule": "object",
+     "isPrivate": "boolean",
      "geofence_id": "string",
      "geojson": "object",
      "hex_payload": "string",
@@ -3661,6 +3686,7 @@
     "workwave"
    ],
    "snake_case": [
+    "avis-budget",
     "blues-wireless",
     "chargefox",
     "esper",

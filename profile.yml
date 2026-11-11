@@ -123,17 +123,6 @@ concepts:
       - year
       - ModelYear
       - modelYear
-    - name: status
-      tier: extended
-      providers: 9
-      share: 0.346
-      type: string
-      spellings:
-      - status
-      - isActive
-      - vehicleStatus
-      - state
-      - Status
     - name: name
       tier: extended
       providers: 8
@@ -141,8 +130,20 @@ concepts:
       type: string
       spellings:
       - name
+      - label
       - displayName
       - Title
+    - name: status
+      tier: extended
+      providers: 8
+      share: 0.308
+      type: string
+      spellings:
+      - status
+      - isActive
+      - vehicleStatus
+      - state
+      - Status
     - name: vehicle_id
       tier: extended
       providers: 8
@@ -153,7 +154,7 @@ concepts:
       - VehicleId
       - assetId
       - unitId
-    long_tail_count: 283
+    long_tail_count: 292
     long_tail_sample:
     - odometer
     - vehicle_type
@@ -165,6 +166,7 @@ concepts:
     - updated_at
     - body_style
     - body_type
+    - category
     - color
     - create_relationship_to_id
     - current_odometer_in_kilometers
@@ -194,7 +196,6 @@ concepts:
     - number_of_trips
     - ongoing_trip_id
     - owned_by_name
-    - owner_company_id
   driver:
     segments_seen:
       drivers: 7
@@ -283,7 +284,7 @@ concepts:
       type: string
       spellings:
       - lastName
-    long_tail_count: 128
+    long_tail_count: 130
     long_tail_sample:
     - depot
     - email
@@ -517,7 +518,6 @@ concepts:
     long_tail_sample:
     - id
     - vehicle_id
-    - assets
     - device
     - driver_id
     - group_id
@@ -526,6 +526,7 @@ concepts:
     - name
     - points
     - serial_number
+    - time_ms
     - vehicle_name
     - vin
   geofence:
@@ -587,15 +588,24 @@ concepts:
       spellings:
       - Description
       - description
-    long_tail_count: 45
+    long_tail_count: 54
     long_tail_sample:
+    - end_time
+    - friday
     - geofence_polygon
+    - geofence_schedule_id
     - geofence_type
     - geometry
     - is_editable
     - metadata
+    - monday
+    - saturday
     - schedules
-    - vehicle_id
+    - start_time
+    - sunday
+    - thursday
+    - tuesday
+    - wednesday
     - active_from
     - active_to
     - asset_group_id
@@ -620,15 +630,6 @@ concepts:
     - group_name
     - group_path
     - groups
-    - include_sub_groups
-    - is_deleted
-    - is_inside
-    - must_identify_stops
-    - portal_url
-    - root_group_id
-    - status
-    - store_location_associations
-    - store_location_ids
   inspection:
     segments_seen:
       dvir: 1

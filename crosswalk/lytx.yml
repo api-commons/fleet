@@ -9,8 +9,10 @@ concepts:
     properties:
       vin: vin
       id: id
+      name:
+      - name
+      - label
       status: status
-      name: name
       vehicle_id: vehicleId
     core_coverage: 0.5
     evidence:

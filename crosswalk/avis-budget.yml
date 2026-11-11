@@ -6,8 +6,7 @@ concepts:
   vehicle:
     path_segment:
     - vehicles
-    properties:
-      status: status
+    properties: {}
     core_coverage: 0.0
     evidence:
     - openapi/_original/avis-budget-rental-cars-openapi.json#GET /cars/catalog/v2/vehicles

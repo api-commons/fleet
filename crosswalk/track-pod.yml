@@ -8,8 +8,8 @@ concepts:
     - vehicle
     properties:
       id: Id
-      status: Status
       name: Title
+      status: Status
     core_coverage: 0.25
     evidence:
     - openapi/_original/track-pod-openapi.yml#DELETE /Vehicle/{id}

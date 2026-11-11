@@ -10,10 +10,10 @@ concepts:
       vin: vin
       id: uuid
       model: modelName
-      status: state
       name:
       - name
       - displayName
+      status: state
     core_coverage: 0.75
     evidence:
     - openapi/_original/shiftmove-fleet-openapi.json#GET /v1/customFields/vehicles

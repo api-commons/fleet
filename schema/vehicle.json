@@ -75,19 +75,6 @@
         "modelYear"
       ]
     },
-    "status": {
-      "type": "string",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.346,
-      "x-commons-providers": 9,
-      "x-commons-spellings": [
-        "status",
-        "isActive",
-        "vehicleStatus",
-        "state",
-        "Status"
-      ]
-    },
     "name": {
       "type": "string",
       "x-commons-tier": "extended",
@@ -95,8 +82,22 @@
       "x-commons-providers": 8,
       "x-commons-spellings": [
         "name",
+        "label",
         "displayName",
         "Title"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.308,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "status",
+        "isActive",
+        "vehicleStatus",
+        "state",
+        "Status"
       ]
     },
     "vehicle_id": {
