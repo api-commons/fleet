@@ -1,0 +1,3687 @@
+{
+ "cohort_size": 85,
+ "unreadable": [],
+ "concepts": {
+  "vehicle": {
+   "automile": {
+    "segments": [
+     "vehicles"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "VehicleId": "integer",
+     "VehicleIdentificationNumber": "string",
+     "NumberPlate": "string",
+     "Make": "string",
+     "Model": "string",
+     "OwnerContactId": "integer",
+     "OwnerCompanyId": "integer",
+     "CurrentOdometerInKilometers": "number",
+     "VehicleType": "integer",
+     "DeleteTripDetailsAfter": "object",
+     "DeleteTripsAfter": "object",
+     "ModelYear": "integer",
+     "BodyStyle": "string",
+     "BodyType": "integer",
+     "CreateRelationshipToId": "integer",
+     "VehicleRelationshipType": "integer",
+     "OwnedByName": "string",
+     "NumberOfTrips": "integer",
+     "DistanceTravelledThisYear": "number",
+     "DistanceTravelledLastYear": "number",
+     "LastKnownLatitude": "number",
+     "LastKnownLongitude": "number",
+     "LastKnownGeoTimeStamp": "string",
+     "LastKnownFormattedAddress": "string",
+     "LastKnownCustomAddress": "string",
+     "LastKnownSpeed": "number",
+     "LastKnownTemperature": "number",
+     "LastKnownTemperatureTimeStamp": "string",
+     "LastTripEndLatitude": "number",
+     "LastTripEndLongitude": "number",
+     "LastTripEndGeoTimeStamp": "string",
+     "ParkedForNumberOfSeconds": "integer",
+     "OngoingTripId": "integer",
+     "MakeImageUrl": "string"
+    },
+    "evidence": [
+     "openapi/_original/automile-openapi-original.json#DELETE /v1/resourceowner/vehicles/{vehicleId}",
+     "openapi/_original/automile-openapi-original.json#GET /v1/resourceowner/vehicles",
+     "openapi/_original/automile-openapi-original.json#GET /v1/resourceowner/vehicles/{vehicleId}",
+     "openapi/_original/automile-openapi-original.json#POST /v1/resourceowner/vehicles",
+     "openapi/_original/automile-openapi-original.json#PUT /v1/resourceowner/vehicles/{vehicleId}"
+    ]
+   },
+   "automileab": {
+    "segments": [
+     "vehicles"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "VehicleId": "integer",
+     "VehicleIdentificationNumber": "string",
+     "NumberPlate": "string",
+     "Make": "string",
+     "Model": "string",
+     "OwnerContactId": "integer",
+     "OwnerCompanyId": "integer",
+     "CurrentOdometerInKilometers": "number",
+     "VehicleType": "integer",
+     "DeleteTripDetailsAfter": "object",
+     "DeleteTripsAfter": "object",
+     "ModelYear": "integer",
+     "BodyStyle": "string",
+     "BodyType": "integer",
+     "CreateRelationshipToId": "integer",
+     "VehicleRelationshipType": "integer",
+     "OwnedByName": "string",
+     "NumberOfTrips": "integer",
+     "DistanceTravelledThisYear": "number",
+     "DistanceTravelledLastYear": "number",
+     "LastKnownLatitude": "number",
+     "LastKnownLongitude": "number",
+     "LastKnownGeoTimeStamp": "string",
+     "LastKnownFormattedAddress": "string",
+     "LastKnownCustomAddress": "string",
+     "LastKnownSpeed": "number",
+     "LastKnownTemperature": "number",
+     "LastKnownTemperatureTimeStamp": "string",
+     "LastTripEndLatitude": "number",
+     "LastTripEndLongitude": "number",
+     "LastTripEndGeoTimeStamp": "string",
+     "ParkedForNumberOfSeconds": "integer",
+     "OngoingTripId": "integer",
+     "MakeImageUrl": "string"
+    },
+    "evidence": [
+     "openapi/_original/automileab-openapi.json#DELETE /v1/resourceowner/vehicles/{vehicleId}",
+     "openapi/_original/automileab-openapi.json#GET /v1/resourceowner/vehicles",
+     "openapi/_original/automileab-openapi.json#GET /v1/resourceowner/vehicles/{vehicleId}",
+     "openapi/_original/automileab-openapi.json#POST /v1/resourceowner/vehicles",
+     "openapi/_original/automileab-openapi.json#PUT /v1/resourceowner/vehicles/{vehicleId}"
+    ]
+   },
+   "autopay": {
+    "segments": [
+     "vehicles"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/autopay-openapi.yml#DELETE /fleet/v2/vehicles",
+     "openapi/_original/autopay-openapi.yml#GET /fleet/v2/vehicles",
+     "openapi/_original/autopay-openapi.yml#POST /fleet/v2/vehicles"
+    ]
+   },
+   "avis-budget": {
+    "segments": [
+     "vehicles"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "status": "object",
+     "transaction": "object",
+     "product": "object",
+     "vehicles": "array",
+     "reservation": "object"
+    },
+    "evidence": [
+     "openapi/_original/avis-budget-rental-cars-openapi.json#GET /cars/catalog/v2/vehicles",
+     "openapi/_original/avis-budget-rental-cars-openapi.yml#GET /cars/catalog/v2/vehicles"
+    ]
+   },
+   "chargefox": {
+    "segments": [
+     "vehicles"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "uuid": "string",
+     "contract_number": "string",
+     "vin": "string",
+     "registration_number": "string",
+     "effective_from": "string",
+     "effective_to": "string",
+     "customer": "object",
+     "cards": "array"
+    },
+    "evidence": [
+     "openapi/_original/chargefox-fleets-api-openapi.json#GET /api/fleets/v1/vehicles"
+    ]
+   },
+   "fleetbase": {
+    "segments": [
+     "vehicles"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "make": "string",
+     "model": "string",
+     "year": "integer",
+     "plate_number": "string",
+     "vin": "string",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/fleetbase-openapi.yml#DELETE /vehicles/{id}",
+     "openapi/_original/fleetbase-openapi.yml#GET /vehicles",
+     "openapi/_original/fleetbase-openapi.yml#GET /vehicles/{id}",
+     "openapi/_original/fleetbase-openapi.yml#POST /vehicles",
+     "openapi/_original/fleetbase-openapi.yml#PUT /vehicles/{id}"
+    ]
+   },
+   "fleetio": {
+    "segments": [
+     "vehicles"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "account_id": "integer",
+     "name": "string",
+     "vehicle_make": "string",
+     "vehicle_model": "string",
+     "vehicle_year": "integer",
+     "vin": "string",
+     "license_plate": "string",
+     "group_id": "integer",
+     "vehicle_status_name": "string",
+     "vehicle_type_name": "string",
+     "primary_meter_value": "number",
+     "primary_meter_unit": "string",
+     "archived_at": "string",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/fleetio-openapi.yml#DELETE /v1/vehicles/{id}",
+     "openapi/_original/fleetio-openapi.yml#GET /v1/vehicles",
+     "openapi/_original/fleetio-openapi.yml#GET /v1/vehicles/{id}",
+     "openapi/_original/fleetio-openapi.yml#PATCH /v1/vehicles/{id}",
+     "openapi/_original/fleetio-openapi.yml#POST /v1/vehicles"
+    ]
+   },
+   "flipturn": {
+    "segments": [
+     "vehicles",
+     "vehicle"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "make": "string",
+     "model": "string",
+     "vin": "string",
+     "licensePlate": "string",
+     "hasTelematics": "boolean",
+     "customer": "object",
+     "accessIds": "array",
+     "departureTime": "string",
+     "outcome": "string",
+     "vehicleId": "integer",
+     "vehicleVin": "string",
+     "shiftName": "string",
+     "routeName": "string",
+     "targetSoc": "integer",
+     "departureTimes": "array"
+    },
+    "evidence": [
+     "openapi/_original/flipturn-openapi.yml#GET /vehicles",
+     "openapi/_original/flipturn-openapi.yml#GET /vehicles/{id}",
+     "openapi/_original/flipturn-openapi.yml#PATCH /vehicles/{id}",
+     "openapi/_original/flipturn-openapi.yml#POST /departure-times/vehicle",
+     "openapi/_original/flipturn-openapi.yml#POST /vehicles"
+    ]
+   },
+   "high-mobility": {
+    "segments": [
+     "vehicles"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "vin": "string",
+     "brand": "string",
+     "license_plate": "string",
+     "clearance_status": "string",
+     "created_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/high-mobility-openapi.yml#DELETE /v1/fleet/vehicles/{vin}",
+     "openapi/_original/high-mobility-openapi.yml#GET /v1/fleet/vehicles",
+     "openapi/_original/high-mobility-openapi.yml#GET /v1/fleet/vehicles/{vin}",
+     "openapi/_original/high-mobility-openapi.yml#POST /v1/fleet/vehicles"
+    ]
+   },
+   "loconav": {
+    "segments": [
+     "vehicles"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/loconav-integration-openapi.yml#GET /integration/api/v1/vehicles",
+     "openapi/_original/loconav-integration-openapi.yml#GET /integration/api/v1/vehicles/{vehicleId}"
+    ]
+   },
+   "locus-sh": {
+    "segments": [
+     "vehicle"
+    ],
+    "operations": [
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "vehicleModelId": "object",
+     "vehicleModel": null,
+     "transporterId": "object",
+     "transporter": null,
+     "riderId": "object",
+     "rider": null,
+     "vehicleCostModel": null,
+     "teams": "array",
+     "skills": "array",
+     "shiftIds": "array",
+     "shifts": "array",
+     "resourceLimits": "array",
+     "manufacturingDate": "object",
+     "isColdChain": "boolean",
+     "unladenWeight": "integer",
+     "fuelType": "string",
+     "mileage": "number",
+     "userCount": "integer",
+     "documents": "array",
+     "baseLocations": null,
+     "fleetType": null,
+     "registrationNumber": "string",
+     "isActive": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/locus-entities-openapi.yml#GET /client/{clientId}/vehicle/{vehicleId}",
+     "openapi/_original/locus-entities-openapi.yml#PUT /client/{clientId}/vehicle/{vehicleId}"
+    ]
+   },
+   "lytx": {
+    "segments": [
+     "vehicles"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "currentPage": "integer",
+     "pageSize": "integer",
+     "totalRecords": "integer",
+     "vehicles": "array",
+     "vehicleId": "integer",
+     "vin": "string",
+     "deviceVin": "string",
+     "odometer": "integer",
+     "location": "object",
+     "totalCount": "integer",
+     "id": "integer",
+     "groupId": "string",
+     "name": "string",
+     "status": "integer",
+     "lastCommunication": "string",
+     "devices": "array",
+     "isWaking": "boolean",
+     "wakeable": "boolean",
+     "dcVehicleId": "string",
+     "lastWakeAttempt": "string"
+    },
+    "evidence": [
+     "openapi/_original/lytx-legacy.vehicleinfo.aggregator-openapi.yml#GET /vehicles",
+     "openapi/_original/lytx-legacy.vehicleinfo.aggregator-openapi.yml#GET /vehicles/{vehicleId}",
+     "openapi/_original/lytx-legacy.videoplatform-openapi.yml#GET /vehicles",
+     "openapi/_original/lytx-legacy.videoplatform-openapi.yml#GET /vehicles/{vehicleIdentifier}",
+     "openapi/_original/lytx-video-openapi.yml#GET /vehicles",
+     "openapi/_original/lytx-video-openapi.yml#GET /vehicles/{vehicleIdentifier}"
+    ]
+   },
+   "maven-machines": {
+    "segments": [
+     "vehicles"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "powerUnitNumber": "string",
+     "powerUnitType": "string",
+     "vin": "string",
+     "make": "string",
+     "model": "string",
+     "year": "number",
+     "assetId": "string",
+     "licensePlateNumber": "string",
+     "licensePlateState": "string",
+     "fuelType": "string",
+     "vehicleStatus": "string",
+     "attributes": "object",
+     "groupCodes": "array",
+     "id": "integer",
+     "vehicle": "string",
+     "eventTime": "string",
+     "uploadedTime": "string",
+     "latitude": "number",
+     "longitude": "number",
+     "odometer": "number",
+     "driver": "object",
+     "extendedParams": "object"
+    },
+    "evidence": [
+     "openapi/_original/maven-machines-assets-openapi.json#GET /vehicles",
+     "openapi/_original/maven-machines-assets-openapi.json#GET /vehicles/{vehicleNumber}",
+     "openapi/_original/maven-machines-assets-openapi.json#PATCH /vehicles/{vehicleNumber}",
+     "openapi/_original/maven-machines-assets-openapi.json#POST /vehicles",
+     "openapi/_original/maven-machines-rest-service-manual-openapi.json#GET /locations/vehicles"
+    ]
+   },
+   "mercedes-me": {
+    "segments": [
+     "vehicle"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "vehicle": "object"
+    },
+    "evidence": [
+     "openapi/_original/mercedes-me-configurator-api-openapi.yml#GET /markets/{marketId}/models/{modelId}/configurations/{configurationId}/images/vehicle",
+     "openapi/_original/mercedes-me-vehicle-images-api-openapi.yml#GET /{finorvin}/vehicle"
+    ]
+   },
+   "nash": {
+    "segments": [
+     "vehicle",
+     "vehicles"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "providerid": "string",
+     "externalidentifier": "string",
+     "enabled": "boolean",
+     "vehicleinfo": "object",
+     "vehicleconfig": "object",
+     "courierids": "array"
+    },
+    "evidence": [
+     "openapi/_original/nash-openapi-original.json#GET /v1/vehicles",
+     "openapi/_original/nash-openapi-original.json#POST /v1/vehicle"
+    ]
+   },
+   "optibus": {
+    "segments": [
+     "vehicles"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "pagination": "object",
+     "vehicles": "array",
+     "createdVehicleIds": "array",
+     "customAttributes": "object",
+     "decommissionedOnDate": "string",
+     "decommissioned": "boolean",
+     "model": "string",
+     "type": "string",
+     "description": "string",
+     "depotName": "string",
+     "regionName": "string",
+     "parkingLocation": "string",
+     "licensePlate": "string",
+     "id": "string",
+     "warnings": "array",
+     "updatedVehicleIds": "array",
+     "mainRegionPeriod": "object",
+     "depot": "string",
+     "opUnitId": "string",
+     "nextDowntime": "number",
+     "archived": "boolean",
+     "archivedOn": "string"
+    },
+    "evidence": [
+     "openapi/_original/optibus-operations-openapi.yml#GET /v1/vehicles",
+     "openapi/_original/optibus-operations-openapi.yml#GET /vehicles",
+     "openapi/_original/optibus-operations-openapi.yml#POST /v1/vehicles",
+     "openapi/_original/optibus-operations-openapi.yml#PUT /v1/vehicles"
+    ]
+   },
+   "otonomo": {
+    "segments": [
+     "vehicles"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "vin": "string",
+     "make": "string",
+     "status": "string",
+     "last_update": "string",
+     "uploadStatus": "string",
+     "RAW_BODY": "string"
+    },
+    "evidence": [
+     "openapi/_original/otonomo-fleet-openapi.yml#GET /v2/vehicle-management/vehicles/",
+     "openapi/_original/otonomo-fleet-openapi.yml#POST /v2/vehicle-management/vehicles/"
+    ]
+   },
+   "revvo": {
+    "segments": [
+     "vehicle"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "value": "string",
+     "success": "boolean",
+     "vin": "string",
+     "assetId": "string",
+     "template": null,
+     "geolocation": null,
+     "tires": "array"
+    },
+    "evidence": [
+     "openapi/_original/revvo-api-openapi-original.yml#GET /fleet/{fleetId}/vehicle/{vin}",
+     "openapi/_original/revvo-api-openapi-original.yml#POST /fleet/{fleetId}/vehicle",
+     "openapi/_original/revvo-api-openapi-original.yml#PUT /fleet/{fleetId}/vehicle"
+    ]
+   },
+   "samsara": {
+    "segments": [
+     "vehicles",
+     "vehicle",
+     "assets"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "month": "string",
+     "quarter": "string",
+     "troubleshooting": "object",
+     "vehicleReports": "array",
+     "year": "integer",
+     "attributes": "array",
+     "auxInputType1": "string",
+     "auxInputType10": "string",
+     "auxInputType11": "string",
+     "auxInputType12": "string",
+     "auxInputType13": "string",
+     "auxInputType2": "string",
+     "auxInputType3": "string",
+     "auxInputType4": "string",
+     "auxInputType5": "string",
+     "auxInputType6": "string",
+     "auxInputType7": "string",
+     "auxInputType8": "string",
+     "auxInputType9": "string",
+     "cameraSerial": "string",
+     "createdAtTime": "string",
+     "esn": "string",
+     "externalIds": "object",
+     "gateway": "object",
+     "harshAccelerationSettingType": "string",
+     "id": "string",
+     "licensePlate": "string",
+     "make": "string",
+     "model": "string",
+     "name": "string",
+     "notes": "string",
+     "sensorConfiguration": "object",
+     "serial": "string",
+     "staticAssignedDriver": "object",
+     "tags": "array",
+     "updatedAtTime": "string",
+     "vehicleRegulationMode": "string",
+     "vehicleType": "string",
+     "vehicleWeight": "integer",
+     "vehicleWeightInKilograms": "integer",
+     "vehicleWeightInPounds": "integer",
+     "vin": "string",
+     "grossVehicleWeight": "object",
+     "engineHours": "integer",
+     "gatewaySerial": "string",
+     "odometerMeters": "integer",
+     "staticAssignedDriverId": "string",
+     "tagIds": "array",
+     "difficultyScore": "object",
+     "percentageData": "object",
+     "rawData": "object",
+     "scoreData": "object",
+     "vehicleId": "string",
+     "assetSerialNumber": "string",
+     "cable": "object"
+    },
+    "evidence": [
+     "openapi/_original/samsara-openapi.yml#GET /fleet/reports/ifta/vehicle",
+     "openapi/_original/samsara-openapi.yml#GET /fleet/vehicles",
+     "openapi/_original/samsara-openapi.yml#GET /fleet/vehicles/{id}",
+     "openapi/_original/samsara-openapi.yml#GET /preview/driver-efficiency/vehicles",
+     "openapi/_original/samsara-openapi.yml#GET /v1/fleet/assets",
+     "openapi/_original/samsara-openapi.yml#PATCH /fleet/vehicles/{id}"
+    ]
+   },
+   "shiftmove": {
+    "segments": [
+     "vehicles"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "uuid": "string",
+     "name": "string",
+     "identifier": "string",
+     "type": "string",
+     "category": "object",
+     "vin": "string",
+     "internalId": "string",
+     "displayName": "string",
+     "state": "string",
+     "activeLicensePlate": "string",
+     "chMasterNumber": "string",
+     "lastModified": "string",
+     "customName": "string",
+     "commissionDate": "string",
+     "fuelTankSize": "number",
+     "fuelType": "string",
+     "transmissionType": "string",
+     "costCenter": "string",
+     "jobAccountNumber": "string",
+     "registrationDate": "string",
+     "registrationCountry": "string",
+     "emissionClass": "string",
+     "tareWeight": "integer",
+     "loadCapacity": "integer",
+     "maxWeight": "integer",
+     "tensileLoad": "integer",
+     "trailerLoad": "integer",
+     "combinedFuelConsumptionPerKm": "number",
+     "urbanFuelConsumptionPerKm": "number",
+     "extraUrbanFuelConsumptionPerKm": "number",
+     "combinedElectricityConsumptionPerKm": "number",
+     "urbanElectricityConsumptionPerKm": "number",
+     "extraUrbanElectricityConsumptionPerKm": "number",
+     "additionalId": "string",
+     "euLicenseNumber": "string",
+     "yearOfConstruction": "integer",
+     "comment": "string",
+     "licensePlateColor": "string",
+     "grossListPrice": "number",
+     "grossListPriceCurrency": "string",
+     "grossListPriceSource": "string",
+     "co2Emission": "integer",
+     "displacement": "integer",
+     "kilowatt": "integer",
+     "tax": "number",
+     "taxCurrency": "string",
+     "manufacturerName": "string",
+     "modelName": "string",
+     "baseModelDisplayName": "string",
+     "importVehicleModel": "string",
+     "subCompany": "string",
+     "vehicleColor": "string",
+     "interiorColor": "string",
+     "cushionColor": "string",
+     "vehicleAvailable": "boolean",
+     "tireStorageLocation": "string",
+     "atAkoGross": "object",
+     "atAkoNet": "object",
+     "atLuxuryTangent": "object",
+     "atNova": "number",
+     "atVatExempt": "boolean",
+     "vehicleType": "string",
+     "handoverDate": "string",
+     "location": "string",
+     "customFieldValuesByCategory": "array",
+     "organizationUuid": "string",
+     "fallbackSpecification": "object"
+    },
+    "evidence": [
+     "openapi/_original/shiftmove-fleet-openapi.json#GET /v1/customFields/vehicles",
+     "openapi/_original/shiftmove-fleet-openapi.json#GET /v1/vehicles",
+     "openapi/_original/shiftmove-fleet-openapi.json#GET /v1/vehicles/{uuid}",
+     "openapi/_original/shiftmove-fleet-openapi.json#POST /v1/vehicles",
+     "openapi/_original/shiftmove-fleet-openapi.json#POST /v1/vehicles/{uuid}"
+    ]
+   },
+   "skydio": {
+    "segments": [
+     "vehicles"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/skydio-openapi.yml#GET /vehicles"
+    ]
+   },
+   "smartcar": {
+    "segments": [
+     "vehicles"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "make": "string",
+     "model": "string",
+     "year": "integer",
+     "vin": "string"
+    },
+    "evidence": [
+     "openapi/_original/smartcar-vehicles-openapi.yml#GET /vehicles/{id}"
+    ]
+   },
+   "tekmetric": {
+    "segments": [
+     "vehicles"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "totalPages": "integer",
+     "totalElements": "integer",
+     "first": "boolean",
+     "last": "boolean",
+     "size": "integer",
+     "number": "integer",
+     "numberOfElements": "integer",
+     "id": "integer",
+     "customerId": "integer",
+     "vin": "string",
+     "year": "integer",
+     "make": "string",
+     "model": "string",
+     "subModel": "string",
+     "licensePlate": "string"
+    },
+    "evidence": [
+     "openapi/_original/tekmetric-openapi.yml#GET /vehicles",
+     "openapi/_original/tekmetric-openapi.yml#GET /vehicles/{id}"
+    ]
+   },
+   "toyota": {
+    "segments": [
+     "vehicles"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "vin": "string",
+     "alias": "string",
+     "make": "string",
+     "model": "string",
+     "year": "integer",
+     "color": "string",
+     "trim": "string",
+     "guid": "string",
+     "isConnected": "boolean",
+     "lastConnectedAt": "string",
+     "unitId": "string",
+     "enrollmentStatus": "string",
+     "fleetId": "string",
+     "enrolledAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/toyota-connected-services-openapi.yml#GET /vehicles",
+     "openapi/_original/toyota-connected-services-openapi.yml#GET /vehicles/{vin}",
+     "openapi/_original/toyota-connected-services-openapi.yml#PUT /vehicles/{vin}",
+     "openapi/_original/toyota-telematics-openapi.yml#GET /fleet/{fleetId}/vehicles",
+     "openapi/_original/toyota-telematics-openapi.yml#GET /vehicles",
+     "openapi/_original/toyota-telematics-openapi.yml#GET /vehicles/{vin}"
+    ]
+   },
+   "track-pod": {
+    "segments": [
+     "vehicle"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "Id": "integer",
+     "DriverId": "string",
+     "DriverUsername": "string",
+     "DepotId": "string",
+     "Depot": "string",
+     "MaxNodes": "integer",
+     "MaxWorkTime": "integer",
+     "MaxDistance": "integer",
+     "SpeedRatio": "number",
+     "CostPerDistance": "number",
+     "CostPerHour": "number",
+     "BaseFare": "number",
+     "StartTime": "string",
+     "VehicleType": "integer",
+     "EmissionCo2": "integer",
+     "Number": "string",
+     "CarrierCode": "string",
+     "Carrier": "string",
+     "Weight": "number",
+     "Volume": "number",
+     "Pallets": "number",
+     "Status": "integer",
+     "Title": "string",
+     "Detail": "string"
+    },
+    "evidence": [
+     "openapi/_original/track-pod-openapi.yml#DELETE /Vehicle/{id}",
+     "openapi/_original/track-pod-openapi.yml#GET /Vehicle",
+     "openapi/_original/track-pod-openapi.yml#GET /Vehicle/{id}",
+     "openapi/_original/track-pod-openapi.yml#POST /Vehicle",
+     "openapi/_original/track-pod-openapi.yml#PUT /Vehicle"
+    ]
+   },
+   "tronity": {
+    "segments": [
+     "vehicles"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "scopes": "array",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/tronity-openapi.yml#DELETE /v1/vehicles/{id}",
+     "openapi/_original/tronity-openapi.yml#GET /v1/vehicles",
+     "openapi/_original/tronity-openapi.yml#GET /v1/vehicles/{id}"
+    ]
+   },
+   "uveye": {
+    "segments": [
+     "vehicles"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "vin": "string",
+     "make": "string",
+     "model": "string",
+     "year": "integer",
+     "color": "string",
+     "body": "string",
+     "stockNumber": "string",
+     "trim": "string",
+     "mileage": "integer",
+     "type": "string",
+     "sellingPrice": "number",
+     "interiorColor": "string",
+     "transmission": "string",
+     "drivetrain": "string",
+     "engine": "string",
+     "fuelType": "string",
+     "msrp": "number",
+     "certified": "boolean",
+     "photoCount": "integer",
+     "stockInDate": "string"
+    },
+    "evidence": [
+     "openapi/_original/uveye-public-api-v1-openapi.yml#POST /merchandise/inventory/vehicles"
+    ]
+   },
+   "volteras": {
+    "segments": [
+     "vehicles"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "make": "string",
+     "model": null,
+     "trim": null,
+     "modelYear": null,
+     "vin": "string",
+     "registrationPlate": null,
+     "isRegNoValidated": null,
+     "regNoValidatedAt": null,
+     "id": "string",
+     "metadata": "object",
+     "isListening": "boolean",
+     "listeningLastUpdated": null,
+     "connectionStatus": null,
+     "connectionErrorCode": null,
+     "connectionErrorMessage": null,
+     "actionCategory": null
+    },
+    "evidence": [
+     "openapi/_original/volteras-connect-openapi-original.json#DELETE /v1/vehicles/{vehicle_id}",
+     "openapi/_original/volteras-connect-openapi-original.json#GET /v1/vehicles",
+     "openapi/_original/volteras-connect-openapi-original.json#GET /v1/vehicles/{vehicle_id}"
+    ]
+   },
+   "workwave": {
+    "segments": [
+     "vehicles"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "departureDepotId": "string",
+     "arrivalDepotId": "string",
+     "startTime": "integer",
+     "endTime": "integer",
+     "status": "string",
+     "requestId": "string"
+    },
+    "evidence": [
+     "openapi/_original/workwave-openapi.yml#DELETE /territories/{territoryId}/vehicles",
+     "openapi/_original/workwave-openapi.yml#DELETE /territories/{territoryId}/vehicles/{vehicleId}",
+     "openapi/_original/workwave-openapi.yml#GET /territories/{territoryId}/vehicles",
+     "openapi/_original/workwave-openapi.yml#GET /territories/{territoryId}/vehicles/{date}",
+     "openapi/_original/workwave-openapi.yml#GET /territories/{territoryId}/vehicles/{vehicleId}",
+     "openapi/_original/workwave-openapi.yml#POST /territories/{territoryId}/vehicles",
+     "openapi/_original/workwave-openapi.yml#POST /territories/{territoryId}/vehicles/{vehicleId}"
+    ]
+   }
+  },
+  "driver": {
+   "circuit": {
+    "segments": [
+     "drivers"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "drivers": "array",
+     "nextPageToken": null,
+     "id": null,
+     "name": null,
+     "email": null,
+     "phone": null,
+     "displayName": null,
+     "active": "boolean",
+     "depots": "array",
+     "routeOverrides": "object"
+    },
+    "evidence": [
+     "openapi/_original/circuit-v0.2b-openapi-original.json#DELETE /drivers/{driverId}",
+     "openapi/_original/circuit-v0.2b-openapi-original.json#GET /drivers",
+     "openapi/_original/circuit-v0.2b-openapi-original.json#GET /drivers/{driverId}",
+     "openapi/_original/circuit-v0.2b-openapi-original.json#PATCH /drivers/{driverId}",
+     "openapi/_original/circuit-v0.2b-openapi-original.json#POST /drivers",
+     "openapi/_original/circuit-v1-openapi-original.json#DELETE /drivers/{driverId}",
+     "openapi/_original/circuit-v1-openapi-original.json#GET /drivers",
+     "openapi/_original/circuit-v1-openapi-original.json#GET /drivers/{driverId}",
+     "openapi/_original/circuit-v1-openapi-original.json#PATCH /drivers/{driverId}",
+     "openapi/_original/circuit-v1-openapi-original.json#POST /drivers"
+    ]
+   },
+   "decisiv": {
+    "segments": [
+     "driver"
+    ],
+    "operations": [
+     "PATCH collection"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "relationships": "object"
+    },
+    "evidence": [
+     "openapi/_original/decisiv-service-management-openapi.json#PATCH /service_management/{srm_account_id}/v1/cases/{case_id}/relationships/driver",
+     "openapi/_original/decisiv-service-management-openapi.yml#PATCH /service_management/{srm_account_id}/v1/cases/{case_id}/relationships/driver"
+    ]
+   },
+   "fleetbase": {
+    "segments": [
+     "drivers"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "email": "string",
+     "phone": "string",
+     "status": "string",
+     "vehicle": "string",
+     "location": "object"
+    },
+    "evidence": [
+     "openapi/_original/fleetbase-openapi.yml#DELETE /drivers/{id}",
+     "openapi/_original/fleetbase-openapi.yml#GET /drivers",
+     "openapi/_original/fleetbase-openapi.yml#GET /drivers/{id}",
+     "openapi/_original/fleetbase-openapi.yml#POST /drivers",
+     "openapi/_original/fleetbase-openapi.yml#PUT /drivers/{id}"
+    ]
+   },
+   "fleetsu": {
+    "segments": [
+     "drivers"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/fleetsu-openapi.yml#GET /v1/drivers",
+     "openapi/_original/fleetsu-openapi.yml#GET /v1/drivers/{driverId}",
+     "openapi/_original/fleetsu-openapi.yml#POST /v1/drivers",
+     "openapi/_original/fleetsu-openapi.yml#POST /v1/drivers/{driverId}"
+    ]
+   },
+   "loconav": {
+    "segments": [
+     "drivers"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/loconav-integration-openapi.yml#DELETE /integration/api/v1/drivers/{driverId}",
+     "openapi/_original/loconav-integration-openapi.yml#GET /integration/api/v1/drivers",
+     "openapi/_original/loconav-integration-openapi.yml#GET /integration/api/v1/drivers/{driverId}",
+     "openapi/_original/loconav-integration-openapi.yml#POST /integration/api/v1/drivers",
+     "openapi/_original/loconav-integration-openapi.yml#PUT /integration/api/v1/drivers/{driverId}"
+    ]
+   },
+   "lytx": {
+    "segments": [
+     "drivers"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "firstName": "string",
+     "lastName": "string",
+     "name": "string",
+     "licenseNumber": "string",
+     "licenseProvince": "string",
+     "acceptedEULA": "integer",
+     "driveGuideVersion": "integer",
+     "wifiEULA": "integer",
+     "activeFrom": "string",
+     "activeTo": "string",
+     "lastAccessDate": "string",
+     "companyName": "string",
+     "companyAddress": "string",
+     "carrierNumber": "string",
+     "isDriver": "boolean",
+     "isEmailReportEnabled": "boolean",
+     "language": "string",
+     "timeZoneId": "string",
+     "userAuthenticationType": "integer",
+     "zoneDisplayMode": "integer",
+     "driverGroups": "array",
+     "companyGroups": "array",
+     "keys": "array",
+     "bookmarks": "array",
+     "viewDriversOwnDataOnly": "boolean",
+     "designation": "string",
+     "employeeNo": "string",
+     "phoneNumber": "string",
+     "phoneNumberExtension": "string"
+    },
+    "evidence": [
+     "openapi/_original/lytx-driversplus-openapi.yml#GET /plus/v1/drivers"
+    ]
+   },
+   "onerail": {
+    "segments": [
+     "drivers"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "emailAddress": "string",
+     "firstName": "string",
+     "lastName": "string",
+     "phoneNumber": "string",
+     "active": "boolean",
+     "title": "string",
+     "employeeId": "string",
+     "mvrCertified": "boolean",
+     "fleetId": "string",
+     "roles": "array",
+     "pickupLocationIds": "array",
+     "lpMarkets": "array",
+     "driver": "object",
+     "lastKnownDriverLocation": "object",
+     "availability": "string",
+     "ownFleetVehicleId": "string",
+     "freelancer": "boolean",
+     "user": "object"
+    },
+    "evidence": [
+     "openapi/_original/onerail-operations-api-openapi.json#GET /v1/drivers",
+     "openapi/_original/onerail-operations-api-openapi.json#GET /v1/organization/{organizationId}/drivers",
+     "openapi/_original/onerail-operations-api-openapi.yml#GET /v1/drivers",
+     "openapi/_original/onerail-operations-api-openapi.yml#GET /v1/organization/{organizationId}/drivers"
+    ]
+   },
+   "optibus": {
+    "segments": [
+     "drivers",
+     "driver"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "pagination": "object",
+     "drivers": "array",
+     "createdDriverIds": "array",
+     "customAttributes": "object",
+     "union": "string",
+     "grade": "string",
+     "type": "string",
+     "emailAddress": "string",
+     "description": "string",
+     "homeNumber": "string",
+     "mobileNumber": "string",
+     "avatar": "string",
+     "groupName": "string",
+     "depotName": "string",
+     "regionName": "string",
+     "startDate": "string",
+     "lastName": "string",
+     "middleName": "string",
+     "firstName": "string",
+     "id": "string",
+     "warnings": "array",
+     "updatedDriverIds": "array",
+     "archived": "boolean",
+     "note": "string",
+     "uuid": "string",
+     "employmentPeriods": "array",
+     "meta": "object",
+     "attributes": "object",
+     "opUnitId": "string",
+     "group": "string",
+     "depot": "string",
+     "driverType": "string",
+     "driverUnion": "string",
+     "driverGrade": "string"
+    },
+    "evidence": [
+     "openapi/_original/optibus-operations-openapi.yml#GET /driver",
+     "openapi/_original/optibus-operations-openapi.yml#GET /v2/drivers",
+     "openapi/_original/optibus-operations-openapi.yml#POST /v1/drivers",
+     "openapi/_original/optibus-operations-openapi.yml#POST /v2/drivers",
+     "openapi/_original/optibus-operations-openapi.yml#PUT /v2/drivers"
+    ]
+   },
+   "samsara": {
+    "segments": [
+     "drivers"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "attributes": "array",
+     "carrierSettings": "object",
+     "createdAtTime": "string",
+     "currentIdCardCode": "string",
+     "driverActivationStatus": "string",
+     "eldAdverseWeatherExemptionEnabled": "boolean",
+     "eldBigDayExemptionEnabled": "boolean",
+     "eldDayStartHour": "integer",
+     "eldExempt": "boolean",
+     "eldExemptReason": "string",
+     "eldPcEnabled": "boolean",
+     "eldSettings": "object",
+     "eldYmEnabled": "boolean",
+     "externalIds": "object",
+     "hasDrivingFeaturesHidden": "boolean",
+     "id": "string",
+     "isDeactivated": "boolean",
+     "licenseNumber": "string",
+     "licenseState": "string",
+     "locale": "string",
+     "name": "string",
+     "notes": "string",
+     "peerGroupTag": "object",
+     "phone": "string",
+     "staticAssignedVehicle": "object",
+     "tachographCardNumber": "string",
+     "tags": "array",
+     "timezone": "string",
+     "updatedAtTime": "string",
+     "usDriverRulesetOverride": "object",
+     "username": "string",
+     "vehicleGroupTag": "object",
+     "waitingTimeDutyStatusEnabled": "boolean",
+     "hosSetting": "object",
+     "password": "string",
+     "peerGroupTagId": "string",
+     "staticAssignedVehicleId": "string",
+     "tagIds": "array",
+     "vehicleGroupTagId": "string",
+     "deactivatedAtTime": "string",
+     "difficultyScore": "object",
+     "driverId": "string",
+     "percentageData": "object",
+     "rawData": "object",
+     "scoreData": "object"
+    },
+    "evidence": [
+     "openapi/_original/samsara-openapi.yml#GET /fleet/drivers",
+     "openapi/_original/samsara-openapi.yml#GET /fleet/drivers/{id}",
+     "openapi/_original/samsara-openapi.yml#GET /preview/driver-efficiency/drivers",
+     "openapi/_original/samsara-openapi.yml#PATCH /fleet/drivers/{id}",
+     "openapi/_original/samsara-openapi.yml#POST /fleet/drivers"
+    ]
+   },
+   "shiftmove": {
+    "segments": [
+     "drivers"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "uuid": "string",
+     "name": "string",
+     "identifier": "string",
+     "type": "string",
+     "category": "object",
+     "firstName": "string",
+     "lastName": "string",
+     "internalId": "string",
+     "state": "string",
+     "lastModified": "string",
+     "startDate": "string",
+     "gender": "string",
+     "middleName": "string",
+     "emailWork": "string",
+     "emailWorkType": "string",
+     "emailPrivate": "string",
+     "phoneNumber": "object",
+     "mobilePhoneNumber": "object",
+     "notificationChannel": "string",
+     "address": "string",
+     "zipCode": "string",
+     "city": "string",
+     "country": "string",
+     "language": "string",
+     "nationality": "string",
+     "placeOfBirth": "string",
+     "birthDate": "string",
+     "costCenter": "string",
+     "subCompany": "string",
+     "department": "string",
+     "location": "string",
+     "comment": "string",
+     "distanceToWorkplace": "number",
+     "employeePayment": "number",
+     "eligibleForDriverBriefings": "boolean",
+     "eligibleForDriverLicenseChecks": "boolean",
+     "managementType": "string",
+     "customFieldValuesByCategory": "array",
+     "organizationUuid": "string"
+    },
+    "evidence": [
+     "openapi/_original/shiftmove-fleet-openapi.json#GET /v1/customFields/drivers",
+     "openapi/_original/shiftmove-fleet-openapi.json#GET /v1/drivers",
+     "openapi/_original/shiftmove-fleet-openapi.json#GET /v1/drivers/{uuid}",
+     "openapi/_original/shiftmove-fleet-openapi.json#POST /v1/drivers",
+     "openapi/_original/shiftmove-fleet-openapi.json#POST /v1/drivers/{uuid}"
+    ]
+   },
+   "track-pod": {
+    "segments": [
+     "driver"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "Id": "string",
+     "Number": "integer",
+     "Name": "string",
+     "Vehicle": "string",
+     "Phone": "string",
+     "Username": "string",
+     "DepotId": "string",
+     "Depot": "string",
+     "HomeAddress": "string",
+     "Zone": "string",
+     "Active": "boolean",
+     "Note": "string",
+     "TeamCodes": "array",
+     "Status": "integer",
+     "Title": "string",
+     "Detail": "string",
+     "Password": "string"
+    },
+    "evidence": [
+     "openapi/_original/track-pod-openapi.yml#GET /Driver",
+     "openapi/_original/track-pod-openapi.yml#POST /Driver",
+     "openapi/_original/track-pod-openapi.yml#PUT /Driver"
+    ]
+   },
+   "treadio": {
+    "segments": [
+     "driver",
+     "drivers"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "GET item",
+     "PUT collection"
+    ],
+    "properties": {
+     "id": "string",
+     "lat": "string",
+     "lon": "string",
+     "image_url": "string",
+     "image_mime_type": "string",
+     "image_name": "string",
+     "type": null,
+     "signable_type": "string",
+     "signable_id": "string",
+     "first_name": "string",
+     "last_name": "string",
+     "company": null,
+     "company_share": null,
+     "equipment": null,
+     "default_equipment": null,
+     "schedule_on": "boolean",
+     "company_day_driver_stat": null,
+     "phone": "string",
+     "managed": "boolean",
+     "labels": "array",
+     "gps_status": "object",
+     "email": "string",
+     "external_id": "string",
+     "time_zone": null,
+     "additional_equipment": "array",
+     "default_additional_equipment": "array",
+     "ticket_match_id": "string",
+     "sender_company": null,
+     "dispatchable": "boolean",
+     "rate_override": "boolean",
+     "expires_at": "string",
+     "name": "string",
+     "job_id": "string",
+     "loads_count": "integer",
+     "job_start_at": "string",
+     "unit_of_measure": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "notes": "string",
+     "quantity": "string",
+     "load_unit_of_measure": "string",
+     "order": null,
+     "material": "object",
+     "service": null,
+     "waypoints": "array",
+     "foreman_contact": null,
+     "sales_contact": null,
+     "supervisor_contact": null,
+     "collaborator_contact": null,
+     "driver": null,
+     "priority": "integer",
+     "project": null,
+     "state": null,
+     "billable_hours": "string",
+     "billable_hours_overridden": "boolean",
+     "editable": "boolean",
+     "copyable": "boolean",
+     "state_changed_at": "string",
+     "load_cycle_avg": "integer",
+     "state_events": "array",
+     "vendor_job_assignment": null,
+     "customer_job_assignment": null,
+     "foremen": "array",
+     "collaborators": "array",
+     "salespeople": "array",
+     "service_class": null,
+     "hauler_rate_type": "string",
+     "driver_rate": null,
+     "paused_at": "string",
+     "driver_rate_value": "string",
+     "driver_rate_type": "string",
+     "completed_loads_count": "integer",
+     "phase": null,
+     "requested_equipment_type_name": "string",
+     "requested_equipment_type_accounting_id": "string",
+     "requested_loads_count": "integer",
+     "equipment_type_gross_capacity": "string",
+     "deletable": "boolean",
+     "job_summary": "object",
+     "recurring_loads": "boolean",
+     "approval_status": null,
+     "driver_commission_rate_value": "string",
+     "driver_commission_rate_type": "string",
+     "equipment_type_gross_capacity_unit_of_measure": "string",
+     "tickets_count": "integer",
+     "job_time": "integer",
+     "approved_at": "string",
+     "driver_require_all_permissions": "boolean",
+     "times_editable": "boolean",
+     "approved": "boolean",
+     "approvable": "boolean",
+     "unapprovable": "boolean",
+     "billing_approved_at": "string",
+     "field_approved_at": "string",
+     "sell_price": "string",
+     "buy_price": "string",
+     "site": null
+    },
+    "evidence": [
+     "openapi/_original/treadio-horizon-openapi.json#DELETE /v1/companies/{company-id}/driver_days/{driver-day-id}/signatures/driver",
+     "openapi/_original/treadio-horizon-openapi.json#DELETE /v1/companies/{company-id}/jobs/{job-id}/signatures/driver",
+     "openapi/_original/treadio-horizon-openapi.json#DELETE /v1/loads/{load-id}/signatures/driver",
+     "openapi/_original/treadio-horizon-openapi.json#GET /v1/companies/{company-id}/drivers",
+     "openapi/_original/treadio-horizon-openapi.json#GET /v1/companies/{company-id}/drivers/{id}",
+     "openapi/_original/treadio-horizon-openapi.json#GET /v1/companies/{company-id}/managed_companies/{managed-company-id}/drivers",
+     "openapi/_original/treadio-horizon-openapi.json#GET /v1/companies/{company-id}/managed_companies/{managed-company-id}/drivers/{id}",
+     "openapi/_original/treadio-horizon-openapi.json#GET /v1/drivers/{id}",
+     "openapi/_original/treadio-horizon-openapi.json#GET /v1/jobs/driver",
+     "openapi/_original/treadio-horizon-openapi.json#PUT /v1/companies/{company-id}/driver_days/{driver-day-id}/signatures/driver",
+     "openapi/_original/treadio-horizon-openapi.json#PUT /v1/companies/{company-id}/jobs/{job-id}/signatures/driver",
+     "openapi/_original/treadio-horizon-openapi.json#PUT /v1/loads/{load-id}/signatures/driver"
+    ]
+   },
+   "workwave": {
+    "segments": [
+     "drivers"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection",
+     "PUT collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "mobileFutureDays": "integer",
+     "deployment": "string",
+     "status": "string",
+     "requestId": "string"
+    },
+    "evidence": [
+     "openapi/_original/workwave-openapi.yml#DELETE /territories/{territoryId}/drivers/{driverId}",
+     "openapi/_original/workwave-openapi.yml#GET /territories/{territoryId}/drivers",
+     "openapi/_original/workwave-openapi.yml#POST /territories/{territoryId}/drivers",
+     "openapi/_original/workwave-openapi.yml#PUT /territories/{territoryId}/drivers",
+     "openapi/_original/workwave-openapi.yml#PUT /territories/{territoryId}/drivers/{driverId}"
+    ]
+   }
+  },
+  "trip": {
+   "automile": {
+    "segments": [
+     "trips",
+     "journeys"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "Version": "object",
+     "Content": "object",
+     "StatusCode": "integer",
+     "ReasonPhrase": "string",
+     "Headers": "array",
+     "TrailingHeaders": "array",
+     "RequestMessage": "object",
+     "IsSuccessStatusCode": "boolean",
+     "TripId": "integer",
+     "TripStartDateTime": "string",
+     "TripEndDateTime": "string",
+     "DistanceKilometers": "number",
+     "FuelConsumptionInLiters": "number",
+     "TripStartFormattedAddress": "string",
+     "TripEndFormattedAddress": "string",
+     "TripStartCustomAddress": "string",
+     "TripEndCustomAddress": "string",
+     "VehicleId": "integer",
+     "TripType": "integer",
+     "DriverContactId": "integer",
+     "HasSpeedingViolation": "boolean",
+     "HasIdlingEvent": "boolean",
+     "HasAccelerationEvent": "boolean",
+     "HasAccident": "boolean",
+     "HasTurningEvent": "boolean",
+     "HasBrakingEvent": "boolean",
+     "ParkedForMinutesUntilNextTrip": "integer",
+     "HasDrivingEvents": "boolean",
+     "CustomCategory": "string",
+     "TripTags": "string",
+     "HideStartRoute": "boolean",
+     "HideEndRoute": "boolean",
+     "VehicleType": "integer",
+     "TripApprovalStatus": "integer",
+     "IsMerged": "boolean",
+     "HasGermanTaxRules": "boolean",
+     "IsLocked": "boolean",
+     "LockReason": "integer",
+     "TripStartCountry": "string",
+     "TripStartPostalCode": "string",
+     "TripEndCountry": "string",
+     "TripEndPostalCode": "string",
+     "IMEI": "string",
+     "TripStartTimeZone": "integer",
+     "TripStartODOMeter": "integer",
+     "TripNumber": "integer",
+     "NumberOfSupportedPIDs": "integer",
+     "VehicleIdentificationNumber": "string",
+     "VechicleProtocol": "string",
+     "TripEndTimeZone": "integer",
+     "TripEndODOMeter": "integer",
+     "FuelInLiters": "number",
+     "TripLengthInKilometers": "number",
+     "TripLengthInMinutes": "integer",
+     "IdleTimeInSecondsAllTrip": "integer",
+     "IdleTimeInSecondsFromStart": "integer",
+     "IdleRPMMax": "integer",
+     "MaxSpeed": "integer",
+     "MaxRPM": "integer",
+     "CO2EmissionInGrams": "number",
+     "OdometerInKilometersAfterTripEnded": "number",
+     "AverageSpeedInKilometersPerHour": "number",
+     "TripStartOutsideTemperatureInCelsius": "number",
+     "BusinessContact": "string",
+     "BusinessContactCompany": "string",
+     "TripReason": "string",
+     "LastEditedByContactId": "integer"
+    },
+    "evidence": [
+     "openapi/_original/automile-openapi-original.json#GET /v1/client/contracts/journeys",
+     "openapi/_original/automile-openapi-original.json#GET /v1/resourceowner/trips",
+     "openapi/_original/automile-openapi-original.json#GET /v1/resourceowner/trips/{tripId}",
+     "openapi/_original/automile-openapi-original.json#PUT /v1/resourceowner/trips/{tripId}"
+    ]
+   },
+   "automileab": {
+    "segments": [
+     "trips",
+     "journeys"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "Version": "object",
+     "Content": "object",
+     "StatusCode": "integer",
+     "ReasonPhrase": "string",
+     "Headers": "array",
+     "TrailingHeaders": "array",
+     "RequestMessage": "object",
+     "IsSuccessStatusCode": "boolean",
+     "TripId": "integer",
+     "TripStartDateTime": "string",
+     "TripEndDateTime": "string",
+     "DistanceKilometers": "number",
+     "FuelConsumptionInLiters": "number",
+     "TripStartFormattedAddress": "string",
+     "TripEndFormattedAddress": "string",
+     "TripStartCustomAddress": "string",
+     "TripEndCustomAddress": "string",
+     "VehicleId": "integer",
+     "TripType": "integer",
+     "DriverContactId": "integer",
+     "HasSpeedingViolation": "boolean",
+     "HasIdlingEvent": "boolean",
+     "HasAccelerationEvent": "boolean",
+     "HasAccident": "boolean",
+     "HasTurningEvent": "boolean",
+     "HasBrakingEvent": "boolean",
+     "ParkedForMinutesUntilNextTrip": "integer",
+     "HasDrivingEvents": "boolean",
+     "CustomCategory": "string",
+     "TripTags": "string",
+     "HideStartRoute": "boolean",
+     "HideEndRoute": "boolean",
+     "VehicleType": "integer",
+     "TripApprovalStatus": "integer",
+     "IsMerged": "boolean",
+     "HasGermanTaxRules": "boolean",
+     "IsLocked": "boolean",
+     "LockReason": "integer",
+     "TripStartCountry": "string",
+     "TripStartPostalCode": "string",
+     "TripEndCountry": "string",
+     "TripEndPostalCode": "string",
+     "IMEI": "string",
+     "TripStartTimeZone": "integer",
+     "TripStartODOMeter": "integer",
+     "TripNumber": "integer",
+     "NumberOfSupportedPIDs": "integer",
+     "VehicleIdentificationNumber": "string",
+     "VechicleProtocol": "string",
+     "TripEndTimeZone": "integer",
+     "TripEndODOMeter": "integer",
+     "FuelInLiters": "number",
+     "TripLengthInKilometers": "number",
+     "TripLengthInMinutes": "integer",
+     "IdleTimeInSecondsAllTrip": "integer",
+     "IdleTimeInSecondsFromStart": "integer",
+     "IdleRPMMax": "integer",
+     "MaxSpeed": "integer",
+     "MaxRPM": "integer",
+     "CO2EmissionInGrams": "number",
+     "OdometerInKilometersAfterTripEnded": "number",
+     "AverageSpeedInKilometersPerHour": "number",
+     "TripStartOutsideTemperatureInCelsius": "number",
+     "BusinessContact": "string",
+     "BusinessContactCompany": "string",
+     "TripReason": "string",
+     "LastEditedByContactId": "integer"
+    },
+    "evidence": [
+     "openapi/_original/automileab-openapi.json#GET /v1/client/contracts/journeys",
+     "openapi/_original/automileab-openapi.json#GET /v1/resourceowner/trips",
+     "openapi/_original/automileab-openapi.json#GET /v1/resourceowner/trips/{tripId}",
+     "openapi/_original/automileab-openapi.json#PUT /v1/resourceowner/trips/{tripId}"
+    ]
+   },
+   "blues-wireless": {
+    "segments": [
+     "journeys"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "has_more": "boolean",
+     "journeys": "array",
+     "end_date": "string",
+     "journey": "object",
+     "journey_id": "integer",
+     "start_date": "string"
+    },
+    "evidence": [
+     "openapi/_original/blues-wireless-notehub-api-openapi.yml#GET /v1/projects/{projectOrProductUID}/devices/{deviceUID}/journeys",
+     "openapi/_original/blues-wireless-notehub-api-openapi.yml#GET /v1/projects/{projectOrProductUID}/devices/{deviceUID}/journeys/{journeyID}"
+    ]
+   },
+   "fleetsu": {
+    "segments": [
+     "trips",
+     "trip"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/fleetsu-openapi.yml#GET /v1/assets/{assetId}/trips",
+     "openapi/_original/fleetsu-openapi.yml#GET /v1/drivers/{driverId}/trip",
+     "openapi/_original/fleetsu-openapi.yml#GET /v1/logbooks/trips",
+     "openapi/_original/fleetsu-openapi.yml#GET /v1/tags/{id}/trips",
+     "openapi/_original/fleetsu-openapi.yml#GET /v1/trips",
+     "openapi/_original/fleetsu-openapi.yml#GET /v1/trips/{tripId}",
+     "openapi/_original/fleetsu-openapi.yml#POST /v1/trips/{tripId}"
+    ]
+   },
+   "loconav": {
+    "segments": [
+     "trips"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/loconav-integration-openapi.yml#DELETE /integration/api/v1/trips/{tripId}",
+     "openapi/_original/loconav-integration-openapi.yml#GET /integration/api/v1/trips",
+     "openapi/_original/loconav-integration-openapi.yml#POST /integration/api/v1/trips",
+     "openapi/_original/loconav-integration-openapi.yml#PUT /integration/api/v1/trips/{tripId}"
+    ]
+   },
+   "lytx": {
+    "segments": [
+     "trips"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "identificationType": "integer",
+     "interval": "object",
+     "driver": "object",
+     "vehicle": "object",
+     "device": "object",
+     "group": "object",
+     "startLocation": "object",
+     "endLocation": "object",
+     "startTime": "string",
+     "endTime": "string",
+     "groupId": "string",
+     "groupIds": "array",
+     "driverId": "string",
+     "vehicleId": "string",
+     "sortColumn": "string",
+     "sortDirection": "string",
+     "pageNumber": "integer",
+     "pageSize": "integer",
+     "tripId": "string",
+     "startDate": "string",
+     "endDate": "string",
+     "creationDateTime": "string",
+     "startPosition": "object",
+     "endPosition": "object",
+     "maxSpeedKph": "number",
+     "distanceKm": "number",
+     "deviceDistanceKm": "number",
+     "eventRecorderTimezone": "string",
+     "afterHoursDistance": "number",
+     "afterHoursDrivingDuration": "string",
+     "afterHoursEnd": "boolean",
+     "afterHoursStart": "boolean",
+     "afterHoursStopDuration": "string",
+     "averageSpeed": "number",
+     "distance": "number",
+     "drivingDuration": "string",
+     "engineHours": "number",
+     "idlingDuration": "string",
+     "isSeatBeltOff": "boolean",
+     "maximumSpeed": "number",
+     "nextTripStart": "string",
+     "speedRange1": "integer",
+     "speedRange1Duration": "string",
+     "speedRange2": "integer",
+     "speedRange2Duration": "string",
+     "speedRange3": "integer",
+     "speedRange3Duration": "string",
+     "start": "string",
+     "stop": "string",
+     "stopDuration": "string",
+     "stopPoint": "object",
+     "workDistance": "number",
+     "workDrivingDuration": "string",
+     "workStopDuration": "string",
+     "id": "string"
+    },
+    "evidence": [
+     "openapi/_original/lytx-legacy.driversession.services-openapi.yml#POST /trips",
+     "openapi/_original/lytx-trips-openapi.yml#GET /v1/trips",
+     "openapi/_original/lytx-tripsplus-openapi.yml#GET /plus/v1/trips"
+    ]
+   },
+   "maven-machines": {
+    "segments": [
+     "trips",
+     "trip"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "PATCH collection",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "externalTripId": "string",
+     "status": "string",
+     "driverCode": "array",
+     "vehicleNumber": "string",
+     "manifestNumber": "array",
+     "plannedStartTime": "string",
+     "plannedArrivalTime": "string",
+     "originLocationCode": "string",
+     "destinationLocationCode": "string",
+     "instructions": "string",
+     "attributes": "string",
+     "manifestNumbers": "array",
+     "trips": "array",
+     "units": "object",
+     "trip": "object",
+     "externalUserIds": "array",
+     "userIds": "array",
+     "externalVehicleIds": "array",
+     "externalTrailerIds": "array",
+     "displayName": "string",
+     "description": "string",
+     "tmsTripType": "string",
+     "sequence": "number",
+     "scheduledStartTime": "string",
+     "scheduledEndTime": "string",
+     "scheduledDistanceTotal": "number",
+     "scheduledDistanceLoaded": "number",
+     "scheduledDistanceEmpty": "number",
+     "scheduledWeight": "number",
+     "scheduledVolume": "number",
+     "scheduledCount": "integer",
+     "shipper": null,
+     "consignee": null,
+     "stops": "array"
+    },
+    "evidence": [
+     "openapi/_original/maven-machines-eld-hos-openapi.json#POST /linehaul/trip",
+     "openapi/_original/maven-machines-linehaul-openapi.json#POST /linehaul/trip",
+     "openapi/_original/maven-machines-workflow-openapi.json#DELETE /truckload/trips",
+     "openapi/_original/maven-machines-workflow-openapi.json#GET /truckload/trips",
+     "openapi/_original/maven-machines-workflow-openapi.json#PATCH /truckload/trips",
+     "openapi/_original/maven-machines-workflow-openapi.json#POST /truckload/trips",
+     "openapi/_original/maven-machines-workflow-openapi.json#PUT /truckload/trips"
+    ]
+   },
+   "optibus": {
+    "segments": [
+     "trips"
+    ],
+    "operations": [
+     "PATCH collection"
+    ],
+    "properties": {
+     "noVehicleNeeded": "boolean",
+     "note": "string",
+     "labelCodes": "array",
+     "events": "array",
+     "date": "string",
+     "depotName": "string",
+     "taskId": "string"
+    },
+    "evidence": [
+     "openapi/_original/optibus-operations-openapi.yml#PATCH /private_hires/order/{orderId}/trips"
+    ]
+   },
+   "otonomo": {
+    "segments": [
+     "trips"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "request_id": "string",
+     "request_uuid": "string",
+     "report_status": "string",
+     "vins": "array",
+     "start_datetime": "string",
+     "end_datetime": "string",
+     "country_codes": "array",
+     "states": "array",
+     "cities": "array",
+     "polygon": "array",
+     "cars_limit": "integer",
+     "records_limit": "integer",
+     "start_at": "boolean",
+     "pass_through": "boolean",
+     "end_at": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/otonomo-fleet-openapi.yml#POST /v1/personal/reports/trips"
+    ]
+   },
+   "samsara": {
+    "segments": [
+     "trips"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "assetIds": "array",
+     "codriverIds": "array",
+     "distanceMeters": "integer",
+     "driverId": "integer",
+     "endAddress": "object",
+     "endCoordinates": "object",
+     "endLocation": "string",
+     "endMs": "integer",
+     "endOdometer": "integer",
+     "fuelConsumedMl": "integer",
+     "startAddress": "object",
+     "startCoordinates": "object",
+     "startLocation": "string",
+     "startMs": "integer",
+     "startOdometer": "integer",
+     "tollMeters": "integer"
+    },
+    "evidence": [
+     "openapi/_original/samsara-openapi.yml#GET /v1/fleet/trips"
+    ]
+   },
+   "toyota": {
+    "segments": [
+     "trips"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "vin": "string",
+     "startTime": "string",
+     "endTime": "string",
+     "distanceMiles": "number",
+     "durationMinutes": "integer",
+     "averageSpeedMph": "number",
+     "maxSpeedMph": "number",
+     "startAddress": "string",
+     "endAddress": "string",
+     "startCoordinates": "object",
+     "endCoordinates": "object",
+     "route": "array",
+     "startLocation": "object",
+     "endLocation": "object"
+    },
+    "evidence": [
+     "openapi/_original/toyota-connected-services-openapi.yml#GET /vehicles/{vin}/trips",
+     "openapi/_original/toyota-telematics-openapi.yml#GET /vehicles/{vin}/trips"
+    ]
+   },
+   "tronity": {
+    "segments": [
+     "trips"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/tronity-openapi.yml#GET /v1/vehicles/{vehicleId}/trips"
+    ]
+   },
+   "volteras": {
+    "segments": [
+     "journeys"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "vehicleId": "string",
+     "distanceTravelledKm": null,
+     "odometerStart": null,
+     "odometerEnd": null,
+     "energyUsedKwh": null,
+     "energyStartKwh": null,
+     "energyEndKwh": null,
+     "socUsed": null,
+     "socStart": null,
+     "socEnd": null,
+     "startTimestamp": "string",
+     "stopTimestamp": null,
+     "startLatitude": null,
+     "startLongitude": null,
+     "stopLatitude": null,
+     "stopLongitude": null,
+     "vin": "string"
+    },
+    "evidence": [
+     "openapi/_original/volteras-connect-openapi-original.json#GET /v1/vehicles/{vehicle_id}/journeys"
+    ]
+   }
+  },
+  "vehicle_location": {
+   "agriinfodesign": {
+    "segments": [
+     "locations"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/agriinfodesign-datastore-openapi.json#GET /poc/devices/{device_id}/locations",
+     "openapi/_original/agriinfodesign-datastore-openapi.json#GET /v1/agricultural-machinery/devices/{device_id}/locations",
+     "openapi/_original/agriinfodesign-datastore-openapi.yml#GET /poc/devices/{device_id}/locations",
+     "openapi/_original/agriinfodesign-datastore-openapi.yml#GET /v1/agricultural-machinery/devices/{device_id}/locations"
+    ]
+   },
+   "decisiv": {
+    "segments": [
+     "positions"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "attributes": "object"
+    },
+    "evidence": [
+     "openapi/_original/decisiv-asset-management-openapi.json#GET /asset_management/{srm_account_id}/v1/vmrs/positions",
+     "openapi/_original/decisiv-asset-management-openapi.yml#GET /asset_management/{srm_account_id}/v1/vmrs/positions",
+     "openapi/_original/decisiv-service-management-openapi.json#GET /service_management/{srm_account_id}/v1/vmrs/positions",
+     "openapi/_original/decisiv-service-management-openapi.yml#GET /service_management/{srm_account_id}/v1/vmrs/positions"
+    ]
+   },
+   "fleetsu": {
+    "segments": [
+     "locations"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/fleetsu-openapi.yml#GET /v1/assets/locations"
+    ]
+   },
+   "lytx": {
+    "segments": [
+     "gps"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "deviceId": "string",
+     "vehicleId": "string",
+     "vehicleName": "string",
+     "vin": "string",
+     "serialNumber": "string",
+     "groupId": "string",
+     "groupName": "string",
+     "points": "array",
+     "latitude": "number",
+     "longitude": "number",
+     "speed": "number",
+     "dateTime": "string",
+     "device": "object",
+     "Id": "string"
+    },
+    "evidence": [
+     "openapi/_original/lytx-gps-openapi.yml#GET /v1/gps",
+     "openapi/_original/lytx-gpsplus-openapi.yml#GET /plus/v1/gps"
+    ]
+   },
+   "samsara": {
+    "segments": [
+     "locations"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "location": "object",
+     "name": "string",
+     "assets": "array",
+     "pagination": "object",
+     "latitude": "number",
+     "longitude": "number",
+     "speedMilesPerHour": "number",
+     "time": "number"
+    },
+    "evidence": [
+     "openapi/_original/samsara-openapi.yml#GET /fleet/vehicles/locations",
+     "openapi/_original/samsara-openapi.yml#GET /v1/fleet/assets/locations",
+     "openapi/_original/samsara-openapi.yml#GET /v1/fleet/assets/{asset_id}/locations"
+    ]
+   },
+   "sertica": {
+    "segments": [
+     "positions",
+     "position"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "listNo": "integer",
+     "positionNo": "integer",
+     "transitReceivedQuantity": "number",
+     "transitReceivedTotalQuantity": "number",
+     "carrierPositionType": "string",
+     "name": "string",
+     "dangerousGoods": "boolean",
+     "itemNo": "string",
+     "itemName": "string",
+     "itemUnitNo": "string",
+     "measureUnitNo": "string",
+     "measureUnitName": "string",
+     "price": "object",
+     "currencyNo": "string",
+     "currencyName": "string",
+     "exchangeRate": "number",
+     "orderedQuantity": "number",
+     "receivedQuantity": "number",
+     "rejectedQuantity": "number",
+     "requestedQuantity": "number",
+     "certificate": "boolean",
+     "supplierItemNo": "string",
+     "purchaseOrderPositionGuid": "string",
+     "guidForReferencedObject": "string",
+     "guid": "string",
+     "liveObjectGuid": "string",
+     "unitGuid": "string",
+     "deleted": "boolean",
+     "latestHistoryGuid": "string",
+     "links": "array",
+     "invoiceNo": "string",
+     "quantity": "number",
+     "measuringUnitNo": "string",
+     "discountPercent": "number",
+     "vatCode": "string",
+     "unitNo": "string",
+     "unitName": "string",
+     "departmentNo": "string",
+     "departmentUnitExternalReference1": "string",
+     "departmentUnitExternalReference2": "string",
+     "departmentUnitExternalReference3": "string",
+     "projectNo": "string",
+     "projectUnitExternalReference1": "string",
+     "projectUnitExternalReference2": "string",
+     "projectUnitExternalReference3": "string",
+     "incidentNo": "string",
+     "classNo": "string",
+     "sfiNo": "string",
+     "itemTypeNo": "string",
+     "userNo": "string",
+     "customReference1": "string",
+     "accountNo": "string",
+     "sapInternalOrderNo": "string",
+     "lineAmount": "object",
+     "vatAmount": "object",
+     "lineTotal": "object",
+     "unitExternalReference1": "string",
+     "unitExternalReference2": "string",
+     "unitExternalReference3": "string",
+     "materialNo": "string",
+     "purchaseOrderNo": "string",
+     "purchaseOrderPositionNo": "integer",
+     "purchaseOrderPositionUnitNo": "string",
+     "purchaseOrderPositionReceivedQuantity": "number",
+     "purchaseOrderPositionOrderedQuantity": "number",
+     "purchaseOrderPositionOutstandingQuantity": "number",
+     "purchaseOrderPositionRejectedQuantity": "number",
+     "purchaseOrderPositionPrice": "object",
+     "purchaseOrderCurrencyNo": "string",
+     "approvedInvoicedQuantity": "number",
+     "outstandingQuantity": "number",
+     "vatName": "string",
+     "vatRate": "number",
+     "positionUnitNo": "string",
+     "positionUnitName": "string",
+     "sfiName": "string",
+     "projectName": "string",
+     "userName": "string",
+     "reference": "string",
+     "purchaseOrderPositionReferenceValue": "string",
+     "className": "string",
+     "incidentDescription": "string",
+     "incidentCategory": "string",
+     "departmentName": "string",
+     "invoiceCurrencyNo": "string",
+     "handled": "boolean",
+     "accountingDimensions": null,
+     "bunker": "boolean",
+     "deliveryDate": "string",
+     "latestReceivedDate": "string",
+     "receivedDate": "string",
+     "discountPercentage": "number",
+     "unitPrice": "object",
+     "drawingNo": "string",
+     "drawingPosNo": "string",
+     "equipmentName": "string",
+     "equipmentRating": "string",
+     "manufacture": "string",
+     "model": "string",
+     "positionClassNo": "string",
+     "positionClassName": "string",
+     "purchaseOrderGuid": "string",
+     "referenceNo": "string",
+     "remark": "string",
+     "supplierRemark": "string",
+     "componentName": "string",
+     "componentNo": "string",
+     "standardNo": "string",
+     "supplierItemDescription": "string",
+     "typeNo": "string",
+     "jobNo": "string",
+     "jobName": "string",
+     "internalRemark": "string",
+     "rejectRemark": "string",
+     "totalPrice": "object",
+     "allowThirdPartyItem": "boolean",
+     "supplierItemDeliveryDays": "integer",
+     "maxStock": "number",
+     "minStock": "number",
+     "stock": "number",
+     "ordered": "number",
+     "requested": "number",
+     "dimension": "string",
+     "referencePosNo": "string",
+     "classification": "string",
+     "daysUntilDelivery": "integer",
+     "receivedByUserNo": "string",
+     "receivedByUserName": "string",
+     "deliveryNoteNo": "string",
+     "hsCodeNo": "string",
+     "hsWeight": "number",
+     "cO2": "number",
+     "accountName": "string",
+     "invoiceQuantity": "number",
+     "supplierPartAuxiliaryID": "string",
+     "purchaseOrderPositionRequisitionPositions": "array",
+     "requestForQuoteNo": "string",
+     "requestForQuoteDescription": "string",
+     "itemGuid": "string",
+     "transferToPurchaseOrder": "boolean",
+     "quotedQuantity": "number",
+     "quantityToOrder": "number",
+     "discount": "number",
+     "workflow": "string",
+     "dimensions": "string",
+     "suppliersDescription": "string",
+     "priceTrendIndicator": "string",
+     "totalQuantityFromRequisitions": "number",
+     "measuringUnitNoFromRequisition": "string",
+     "itemReferenceNo": "string",
+     "requisitionNo": "string",
+     "requisitionDescription": "string",
+     "requestedMeasureUnitNo": "string",
+     "requestedMeasureUnitName": "string",
+     "standardCurrencyNo": "string",
+     "rejected": "boolean",
+     "requestedDeliveryDate": "string",
+     "technicalApprovalDate": "string",
+     "technicalApprovalUserNo": "string",
+     "technicalApprovalUserName": "string",
+     "technicalAccountNo": "string",
+     "technicalAccountName": "string",
+     "technicalAccountNoName": "string",
+     "itemGroupNos": "string",
+     "itemGroupNoNames": "string",
+     "itemTypeName": "string",
+     "itemTypeNoName": "string",
+     "standardSupplierNo": "string",
+     "standardSupplierName": "string",
+     "standardSupplierNoName": "string",
+     "urgent": "boolean",
+     "companyNo": "string",
+     "companyName": "string",
+     "supplierReferenceNo": "string",
+     "linkedToOpenRFQPosition": "boolean",
+     "priceInStandardCurrency": "object",
+     "totalPriceInStandardCurrency": "object",
+     "rejectReasonNo": "string",
+     "rejectReasonName": "string",
+     "latitude": "number",
+     "longitude": "number",
+     "carrierGuid": "string",
+     "carrierNo": "string",
+     "requisitionPositions": "array",
+     "positionsWithoutRequisitionLink": "array"
+    },
+    "evidence": [
+     "openapi/_original/sertica-web-api-openapi-original.json#GET /Carriers/{carrierNo}/positions",
+     "openapi/_original/sertica-web-api-openapi-original.json#GET /ImInvoices/{invoiceNo}/positions",
+     "openapi/_original/sertica-web-api-openapi-original.json#GET /ImInvoices/{invoiceNo}/positions/{positionNo}",
+     "openapi/_original/sertica-web-api-openapi-original.json#GET /PurchaseOrders/{purchaseOrderNo}/positions",
+     "openapi/_original/sertica-web-api-openapi-original.json#GET /PurchaseOrders/{purchaseOrderNo}/positions/{positionNo}",
+     "openapi/_original/sertica-web-api-openapi-original.json#GET /RequestForQuotes/{requestForQuoteNo}/positions",
+     "openapi/_original/sertica-web-api-openapi-original.json#GET /Requisitions/{requisitionNo}/positions",
+     "openapi/_original/sertica-web-api-openapi-original.json#GET /UnitShipments/{shipmentNo}/markingCarriers/{markingCarrierNo}/positions",
+     "openapi/_original/sertica-web-api-openapi-original.json#GET /Units/{unitNo}/ais/position"
+    ]
+   },
+   "workwave": {
+    "segments": [
+     "gps"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "driverId": "string",
+     "vehicleId": "string",
+     "latitude": "number",
+     "longitude": "number",
+     "speed": "number",
+     "timestamp": "string"
+    },
+    "evidence": [
+     "openapi/_original/workwave-openapi.yml#GET /territories/{territoryId}/gps"
+    ]
+   }
+  },
+  "geofence": {
+   "automile": {
+    "segments": [
+     "geofence"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "GeofenceId": "integer",
+     "Name": "string",
+     "Description": "string",
+     "GeofencePolygon": "object",
+     "IsEditable": "boolean",
+     "GeofenceType": "integer",
+     "Schedules": "array",
+     "VehicleId": "integer"
+    },
+    "evidence": [
+     "openapi/_original/automile-openapi-original.json#DELETE /v1/resourceowner/geofence/{geofenceId}",
+     "openapi/_original/automile-openapi-original.json#GET /v1/resourceowner/geofence",
+     "openapi/_original/automile-openapi-original.json#GET /v1/resourceowner/geofence/{geofenceId}",
+     "openapi/_original/automile-openapi-original.json#POST /v1/resourceowner/geofence",
+     "openapi/_original/automile-openapi-original.json#PUT /v1/resourceowner/geofence/{geofenceId}"
+    ]
+   },
+   "automileab": {
+    "segments": [
+     "geofence"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "GeofenceId": "integer",
+     "Name": "string",
+     "Description": "string",
+     "GeofencePolygon": "object",
+     "IsEditable": "boolean",
+     "GeofenceType": "integer",
+     "Schedules": "array",
+     "VehicleId": "integer"
+    },
+    "evidence": [
+     "openapi/_original/automileab-openapi.json#DELETE /v1/resourceowner/geofence/{geofenceId}",
+     "openapi/_original/automileab-openapi.json#GET /v1/resourceowner/geofence",
+     "openapi/_original/automileab-openapi.json#GET /v1/resourceowner/geofence/{geofenceId}",
+     "openapi/_original/automileab-openapi.json#POST /v1/resourceowner/geofence",
+     "openapi/_original/automileab-openapi.json#PUT /v1/resourceowner/geofence/{geofenceId}"
+    ]
+   },
+   "autopay": {
+    "segments": [
+     "zone"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/autopay-openapi.yml#GET /status/v1/zone/{zone_code}"
+    ]
+   },
+   "esper": {
+    "segments": [
+     "geofence",
+     "geofences"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "description": "string",
+     "enterprise": "string",
+     "latitude": "string",
+     "longitude": "string",
+     "radius": "integer",
+     "radius_unit": "string",
+     "device_actions": "array",
+     "device_count": "integer",
+     "created_by": "string",
+     "created_on": "string",
+     "updated_on": "string",
+     "actions": "array",
+     "geometry": null,
+     "created_at": "string",
+     "updated_at": "string",
+     "device_summary": "object",
+     "blueprints": "array",
+     "content": "object"
+    },
+    "evidence": [
+     "openapi/_original/esper-openapi.json#DELETE /geofence/v1/geofences/{geofence_id}",
+     "openapi/_original/esper-openapi.json#DELETE /v0/enterprise/{enterprise_id}/geofence/{geofence_id}/",
+     "openapi/_original/esper-openapi.json#GET /geofence/v1/geofences",
+     "openapi/_original/esper-openapi.json#GET /v0/enterprise/{enterprise_id}/geofence/",
+     "openapi/_original/esper-openapi.json#GET /v0/enterprise/{enterprise_id}/geofence/{geofence_id}/",
+     "openapi/_original/esper-openapi.json#PATCH /v0/enterprise/{enterprise_id}/geofence/{geofence_id}/",
+     "openapi/_original/esper-openapi.json#POST /geofence/v1/geofences",
+     "openapi/_original/esper-openapi.json#PUT /v0/enterprise/{enterprise_id}/geofence/{geofence_id}/"
+    ]
+   },
+   "federal-highway-administration": {
+    "segments": [
+     "geofence"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "name": "string",
+     "description": "string",
+     "geoFence": "object",
+     "messageStandard": "string",
+     "messages": "array",
+     "isActive": "boolean",
+     "id": "string",
+     "vendorId": "string",
+     "geofence_id": "string",
+     "geojson": "object",
+     "hex_payload": "string",
+     "deployed_by": "string",
+     "is_active": "boolean",
+     "created_at": "string",
+     "updated_at": "string",
+     "expires_at": "string",
+     "geohashes": "array",
+     "asn1_hex": "string",
+     "override_geofence": "object"
+    },
+    "evidence": [
+     "openapi/_original/federal-highway-administration-v2x-app-api-openapi.json#DELETE /prd/v2/configurations/geofence",
+     "openapi/_original/federal-highway-administration-v2x-app-api-openapi.json#DELETE /prd/v2/deposit/geofence",
+     "openapi/_original/federal-highway-administration-v2x-app-api-openapi.json#GET /prd/v2/configurations/geofence",
+     "openapi/_original/federal-highway-administration-v2x-app-api-openapi.json#POST /prd/v2/configurations/geofence",
+     "openapi/_original/federal-highway-administration-v2x-app-api-openapi.json#POST /prd/v2/deposit/geofence",
+     "openapi/_original/federal-highway-administration-v2x-app-api-openapi.json#PUT /prd/v2/configurations/geofence"
+    ]
+   },
+   "fleetbase": {
+    "segments": [
+     "zones"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "description": "string",
+     "border": "object"
+    },
+    "evidence": [
+     "openapi/_original/fleetbase-openapi.yml#DELETE /zones/{id}",
+     "openapi/_original/fleetbase-openapi.yml#GET /zones",
+     "openapi/_original/fleetbase-openapi.yml#GET /zones/{id}",
+     "openapi/_original/fleetbase-openapi.yml#POST /zones",
+     "openapi/_original/fleetbase-openapi.yml#PUT /zones/{id}"
+    ]
+   },
+   "here": {
+    "segments": [
+     "geofences",
+     "geofence"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "geometries": "array",
+     "meta": "array",
+     "Tiles": "array",
+     "lat": "number",
+     "lon": "number",
+     "layer": "string",
+     "searchRadius": "number",
+     "attributes": "array",
+     "assetId": "string",
+     "id": "string",
+     "data": "object",
+     "pageToken": "string",
+     "count": "integer",
+     "trackingId": "string",
+     "externalId": "string",
+     "appId": "string",
+     "version": "integer",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "geofence": null
+    },
+    "evidence": [
+     "openapi/_original/here-geofencing-v1-openapi.json#GET /v8/geofence",
+     "openapi/_original/here-geofencing-v1-openapi.json#POST /v8/geofence",
+     "openapi/_original/here-geofencing-v1-openapi_2.json#GET /v8/geofence",
+     "openapi/_original/here-geofencing-v1-openapi_2.json#POST /v8/geofence",
+     "openapi/_original/here-tracking-v2-openapi.json#DELETE /associations/v3/{trackingId}/geofences/{geofenceId}",
+     "openapi/_original/here-tracking-v2-openapi.json#DELETE /metadata/v2/geofences/{geofenceId}",
+     "openapi/_original/here-tracking-v2-openapi.json#GET /associations/v3/geofences/{geofenceId}",
+     "openapi/_original/here-tracking-v2-openapi.json#GET /associations/v3/{trackingId}/geofences",
+     "openapi/_original/here-tracking-v2-openapi.json#GET /metadata/v2/geofences/{geofenceId}",
+     "openapi/_original/here-tracking-v2-openapi.json#POST /metadata/v2/geofences/batch",
+     "openapi/_original/here-tracking-v2-openapi.json#PUT /associations/v3/{trackingId}/geofences/{geofenceId}",
+     "openapi/_original/here-tracking-v2-openapi.json#PUT /metadata/v2/geofences/{geofenceId}"
+    ]
+   },
+   "lytx": {
+    "segments": [
+     "geofences",
+     "zones"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection",
+     "PUT collection",
+     "PUT item"
+    ],
+    "properties": {
+     "geofenceId": "string",
+     "name": "string",
+     "rootGroupId": "string",
+     "groupId": "string",
+     "groupName": "string",
+     "groupPath": "string",
+     "includeSubGroups": "boolean",
+     "isInside": "boolean",
+     "geofenceGeography": "object",
+     "color": "string",
+     "effectiveDaysOfWeek": "string",
+     "createdDate": "string",
+     "assetGroupId": "string",
+     "assetIncludeSubGroups": "boolean",
+     "assets": "array",
+     "effectiveStartTime": "string",
+     "effectiveEndTime": "string",
+     "effectiveTimezoneOffset": "string",
+     "groupIdentifier": "string",
+     "isActive": "boolean",
+     "activeFrom": "string",
+     "activeTo": "string",
+     "comment": "string",
+     "displayed": "boolean",
+     "externalReference": "string",
+     "fillColor": "object",
+     "groups": "array",
+     "id": "string",
+     "metadata": "object",
+     "mustIdentifyStops": "boolean",
+     "points": "array",
+     "version": "string",
+     "zoneTypes": "array"
+    },
+    "evidence": [
+     "openapi/_original/lytx-geofences-openapi.yml#DELETE /v1/geofences/{geofenceIdentifier}",
+     "openapi/_original/lytx-geofences-openapi.yml#GET /v1/geofences",
+     "openapi/_original/lytx-geofences-openapi.yml#POST /v1/geofences",
+     "openapi/_original/lytx-geofences-openapi.yml#PUT /v1/geofences/{geofenceIdentifier}",
+     "openapi/_original/lytx-zonesplus-openapi.yml#GET /plus/v1/zones",
+     "openapi/_original/lytx-zonesputandpostplus-openapi.yml#POST /plus/v1/zones",
+     "openapi/_original/lytx-zonesputandpostplus-openapi.yml#PUT /plus/v1/zones"
+    ]
+   },
+   "nash": {
+    "segments": [
+     "zones"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": null,
+     "externalId": null,
+     "portalUrl": null,
+     "coverageArea": null,
+     "storeLocations": null,
+     "storeLocationAssociations": null,
+     "zoneRestrictions": null,
+     "tags": null,
+     "zoneMetadata": null,
+     "isDeleted": null,
+     "coverageAreaId": null,
+     "polygon": null,
+     "storeLocationIds": null
+    },
+    "evidence": [
+     "openapi/_original/nash-openapi-original.json#DELETE /v1/zones/{id}",
+     "openapi/_original/nash-openapi-original.json#GET /v1/zones",
+     "openapi/_original/nash-openapi-original.json#GET /v1/zones/{id}",
+     "openapi/_original/nash-openapi-original.json#PATCH /v1/zones/{id}",
+     "openapi/_original/nash-openapi-original.json#POST /v1/zones"
+    ]
+   },
+   "onerail": {
+    "segments": [
+     "geofence"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "organizationId": "string",
+     "deliveryAutoStatusChange": "boolean",
+     "pickupPrimaryMeters": "number",
+     "pickupSecondaryMeters": "number",
+     "dropoffPrimaryMeters": "number",
+     "dropoffSecondaryMeters": "number",
+     "etaThresholdSeconds": "integer",
+     "createdById": "string",
+     "updatedById": "string"
+    },
+    "evidence": [
+     "openapi/_original/onerail-operations-api-openapi.json#GET /v1/organization/{organizationId}/geofence",
+     "openapi/_original/onerail-operations-api-openapi.json#POST /v1/organization/{organizationId}/geofence",
+     "openapi/_original/onerail-operations-api-openapi.json#PUT /v1/organization/{organizationId}/geofence",
+     "openapi/_original/onerail-operations-api-openapi.yml#GET /v1/organization/{organizationId}/geofence",
+     "openapi/_original/onerail-operations-api-openapi.yml#POST /v1/organization/{organizationId}/geofence",
+     "openapi/_original/onerail-operations-api-openapi.yml#PUT /v1/organization/{organizationId}/geofence"
+    ]
+   },
+   "toro": {
+    "segments": [
+     "zones"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "description": "string",
+     "status": "string",
+     "wateringDurationMinutes": "integer",
+     "lastWateredAt": "string",
+     "nextScheduledAt": "string",
+     "soilMoisture": "number",
+     "flowRateGpm": "number"
+    },
+    "evidence": [
+     "openapi/_original/toro-intellidash-openapi.yml#GET /irrigation/zones",
+     "openapi/_original/toro-intellidash-openapi.yml#GET /irrigation/zones/{zoneId}"
+    ]
+   }
+  },
+  "inspection": {
+   "lytx": {
+    "segments": [
+     "dvir"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "creationDate": "string",
+     "certificationDate": "string",
+     "location": "string",
+     "inspectionType": "string",
+     "vehicleId": "string",
+     "vehicleGroupId": "string",
+     "vehicleName": "string",
+     "trailerId": "number",
+     "trailerGroupId": "string",
+     "trailerName": "string",
+     "driverName": "string",
+     "generalNote": "string",
+     "duration": "string",
+     "odometer": "number",
+     "dvirStatus": "string",
+     "inspectionListId": "integer",
+     "inspectionListName": "string",
+     "defects": "array",
+     "mechanicSignature": "object",
+     "reviewerSignature": "object",
+     "authorityAddress": "string",
+     "authorityName": "string",
+     "certifiedBy": "object",
+     "certifyDate": "string",
+     "certifyRemark": "string",
+     "dateTime": "string",
+     "defectList": "object",
+     "device": "object",
+     "driver": "object",
+     "driverRemark": "string",
+     "dvirDefects": "array",
+     "engineHours": "number",
+     "isSafeToOperate": "boolean",
+     "loadHeight": "number",
+     "loadWidth": "number",
+     "logType": "string",
+     "repairDate": "string",
+     "repairedBy": "object",
+     "repairRemark": "string",
+     "version": "string"
+    },
+    "evidence": [
+     "openapi/_original/lytx-dvir-openapi.yml#GET /v1/dvir",
+     "openapi/_original/lytx-dvir-openapi.yml#GET /v1/dvir/{reportIdentifier}",
+     "openapi/_original/lytx-dvirplus-openapi.yml#GET /plus/v1/dvir"
+    ]
+   },
+   "samsara": {
+    "segments": [
+     "dvirs"
+    ],
+    "operations": [
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "authorSignature": null,
+     "endTime": "string",
+     "id": "string",
+     "licensePlate": "string",
+     "location": "string",
+     "mechanicNotes": "string",
+     "odometerMeters": "integer",
+     "safetyStatus": "string",
+     "secondSignature": null,
+     "startTime": "string",
+     "thirdSignature": null,
+     "trailer": null,
+     "trailerDefects": "array",
+     "trailerName": "string",
+     "type": "string",
+     "vehicle": null,
+     "vehicleDefects": "array",
+     "authorId": "string",
+     "resolvedDefectIds": "array",
+     "trailerId": "string",
+     "vehicleId": "string",
+     "isResolved": "boolean",
+     "signedAtTime": "string"
+    },
+    "evidence": [
+     "openapi/_original/samsara-openapi.yml#PATCH /fleet/dvirs/{id}",
+     "openapi/_original/samsara-openapi.yml#POST /fleet/dvirs"
+    ]
+   },
+   "uveye": {
+    "segments": [
+     "inspection"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "inspectionId": "string",
+     "artemis": "object",
+     "helios": "object",
+     "atlas": "object",
+     "apollo": "object",
+     "overviewImage": "string",
+     "coverImage": "string",
+     "organizationId": "string",
+     "organizationDisplayName": "string",
+     "siteId": "string",
+     "siteDisplayName": "string",
+     "inspectedAt": "string",
+     "licensePlate": "string",
+     "licensePlateUsStateAbbreviation": "string",
+     "vin": "string",
+     "uniqueId": "string",
+     "isArtemisModuleInvalid": "boolean",
+     "isAtlasModuleInvalid": "boolean",
+     "isHeliosModuleInvalid": "boolean",
+     "isScanInvalid": "boolean",
+     "year": "string",
+     "numberOfCylinders": [
+      "number",
+      "null"
+     ],
+     "fuelType": "string",
+     "bodyType": "string",
+     "make": "string",
+     "model": "string",
+     "trim": "string",
+     "cabSubTrim": "string",
+     "bedSubTrim": "string",
+     "doorCount": [
+      "number",
+      "null"
+     ],
+     "exteriorColor": "string",
+     "engineDisplacement": "string",
+     "isDriveable": "boolean",
+     "spareTireInfo": "string",
+     "keyType": "string",
+     "merchandiseVehicleData": "object",
+     "alertsOnly": "boolean",
+     "showTreadPolygons": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/uveye-public-api-v1-openapi.yml#POST /inspection"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "701x",
+    "agco",
+    "agriinfodesign",
+    "aloft",
+    "amazon-iot-device-management",
+    "automile",
+    "automileab",
+    "automotive-grade-linux",
+    "autopay",
+    "avis-budget",
+    "balena",
+    "bear-robotics",
+    "bird-rides",
+    "blues-wireless",
+    "bmw-connecteddrive",
+    "bp",
+    "bringg",
+    "carrier-global",
+    "cat",
+    "cedarai",
+    "chargefox",
+    "circuit",
+    "cnh",
+    "decisiv",
+    "esper",
+    "federal-highway-administration",
+    "finditparts",
+    "fleetbase",
+    "fleetio",
+    "fleetsu",
+    "flipturn",
+    "foxglove-technologies",
+    "geotab",
+    "goodyear-tire-and-rubber",
+    "here",
+    "here-technologies",
+    "high-mobility",
+    "inrix",
+    "kardinal",
+    "life360",
+    "loconav",
+    "locus-sh",
+    "lytx",
+    "markforged",
+    "maven-machines",
+    "mercedes-me",
+    "mileiq",
+    "nash",
+    "onerail",
+    "optibus",
+    "otonomo",
+    "particle",
+    "picker",
+    "revvo",
+    "root",
+    "routific",
+    "runbuggy",
+    "ryder-system",
+    "samsara",
+    "scale-computing",
+    "sertica",
+    "shell",
+    "shiftmove",
+    "skydio",
+    "smartcar",
+    "switchlabs",
+    "tekmetric",
+    "toro",
+    "toyota",
+    "travelcenters-of-america",
+    "travelers",
+    "treadio",
+    "trimble",
+    "trimble-agriculture",
+    "tronity",
+    "uveye",
+    "viridi-parente",
+    "visteon",
+    "volteras",
+    "workwave",
+    "zego"
+   ],
+   "kebab-case": [
+    "agriinfodesign",
+    "aloft",
+    "amazon-iot-device-management",
+    "automile",
+    "automileab",
+    "automotive-grade-linux",
+    "avis-budget",
+    "bear-robotics",
+    "blues-wireless",
+    "bp",
+    "bringg",
+    "carrier-global",
+    "cedarai",
+    "cnh",
+    "esper",
+    "federal-highway-administration",
+    "fleetbase",
+    "fleetsu",
+    "flipturn",
+    "foxglove-technologies",
+    "geotab",
+    "goodyear-tire-and-rubber",
+    "here",
+    "high-mobility",
+    "life360",
+    "locus-sh",
+    "lytx",
+    "markforged",
+    "maven-machines",
+    "mileiq",
+    "nash",
+    "onerail",
+    "optibus",
+    "otonomo",
+    "particle",
+    "picker",
+    "revvo",
+    "root",
+    "routific",
+    "runbuggy",
+    "ryder-system",
+    "samsara",
+    "scale-computing",
+    "sertica",
+    "smartcar",
+    "switchlabs",
+    "tekmetric",
+    "toro",
+    "toyota",
+    "travelcenters-of-america",
+    "uveye",
+    "viridi-parente",
+    "volteras",
+    "zego"
+   ],
+   "camelCase": [
+    "701x",
+    "agco",
+    "amazon-iot-device-management",
+    "automile",
+    "automileab",
+    "bmw-connecteddrive",
+    "cat",
+    "circuit",
+    "fleetsu",
+    "here",
+    "inrix",
+    "lytx",
+    "maven-machines",
+    "mercedes-me",
+    "onerail",
+    "picker",
+    "runbuggy",
+    "scale-computing",
+    "sertica",
+    "shiftmove",
+    "trimble",
+    "viridi-parente"
+   ],
+   "snake_case": [
+    "agriinfodesign",
+    "autopay",
+    "balena",
+    "bird-rides",
+    "blues-wireless",
+    "bringg",
+    "decisiv",
+    "esper",
+    "finditparts",
+    "fleetio",
+    "high-mobility",
+    "loconav",
+    "markforged",
+    "nash",
+    "optibus",
+    "otonomo",
+    "particle",
+    "samsara",
+    "switchlabs",
+    "treadio",
+    "tronity",
+    "viridi-parente"
+   ],
+   "other": [
+    "701x",
+    "agriinfodesign",
+    "amazon-iot-device-management",
+    "amazon-iot-fleetwise",
+    "balena",
+    "circuit",
+    "fleetsu",
+    "here",
+    "optibus",
+    "otonomo",
+    "track-pod",
+    "trimble",
+    "viam",
+    "viridi-parente",
+    "volteras"
+   ],
+   "PascalCase": [
+    "701x",
+    "agco",
+    "automile",
+    "automileab",
+    "carrier-global",
+    "inrix",
+    "particle",
+    "samsara",
+    "sertica",
+    "track-pod",
+    "viam"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "701x",
+    "agco",
+    "agriinfodesign",
+    "aloft",
+    "amazon-iot-device-management",
+    "automile",
+    "automileab",
+    "automotive-grade-linux",
+    "autopay",
+    "avis-budget",
+    "blues-wireless",
+    "bmw-connecteddrive",
+    "bp",
+    "carrier-global",
+    "cedarai",
+    "chargefox",
+    "circuit",
+    "cnh",
+    "decisiv",
+    "esper",
+    "federal-highway-administration",
+    "finditparts",
+    "fleetbase",
+    "flipturn",
+    "foxglove-technologies",
+    "goodyear-tire-and-rubber",
+    "here",
+    "here-technologies",
+    "inrix",
+    "kardinal",
+    "life360",
+    "locus-sh",
+    "lytx",
+    "maven-machines",
+    "mercedes-me",
+    "mileiq",
+    "nash",
+    "onerail",
+    "optibus",
+    "otonomo",
+    "picker",
+    "revvo",
+    "root",
+    "runbuggy",
+    "ryder-system",
+    "samsara",
+    "scale-computing",
+    "sertica",
+    "shell",
+    "shiftmove",
+    "switchlabs",
+    "tekmetric",
+    "toro",
+    "toyota",
+    "track-pod",
+    "travelcenters-of-america",
+    "travelers",
+    "treadio",
+    "trimble",
+    "trimble-agriculture",
+    "uveye",
+    "viridi-parente",
+    "visteon",
+    "volteras"
+   ],
+   "camelCase": [
+    "701x",
+    "agco",
+    "agriinfodesign",
+    "aloft",
+    "amazon-iot-device-management",
+    "amazon-iot-fleetwise",
+    "automile",
+    "automileab",
+    "blues-wireless",
+    "bmw-connecteddrive",
+    "bp",
+    "carrier-global",
+    "cedarai",
+    "circuit",
+    "cnh",
+    "flipturn",
+    "foxglove-technologies",
+    "geotab",
+    "goodyear-tire-and-rubber",
+    "here",
+    "inrix",
+    "kardinal",
+    "life360",
+    "locus-sh",
+    "lytx",
+    "maven-machines",
+    "mercedes-me",
+    "nash",
+    "onerail",
+    "optibus",
+    "picker",
+    "revvo",
+    "ryder-system",
+    "samsara",
+    "scale-computing",
+    "sertica",
+    "shell",
+    "shiftmove",
+    "tekmetric",
+    "toro",
+    "toyota",
+    "track-pod",
+    "trimble",
+    "trimble-agriculture",
+    "viridi-parente",
+    "volteras"
+   ],
+   "snake_case": [
+    "agco",
+    "aloft",
+    "automile",
+    "automileab",
+    "automotive-grade-linux",
+    "autopay",
+    "avis-budget",
+    "blues-wireless",
+    "cedarai",
+    "chargefox",
+    "esper",
+    "federal-highway-administration",
+    "finditparts",
+    "fleetio",
+    "here",
+    "mileiq",
+    "nash",
+    "otonomo",
+    "picker",
+    "root",
+    "samsara",
+    "skydio",
+    "switchlabs",
+    "travelcenters-of-america",
+    "travelers",
+    "treadio",
+    "volteras"
+   ],
+   "PascalCase": [
+    "701x",
+    "agco",
+    "automile",
+    "automileab",
+    "bp",
+    "federal-highway-administration",
+    "lytx",
+    "picker",
+    "sertica"
+   ],
+   "other": [
+    "701x",
+    "aloft",
+    "balena",
+    "decisiv",
+    "esper",
+    "foxglove-technologies",
+    "here",
+    "picker",
+    "treadio"
+   ],
+   "kebab-case": [
+    "maven-machines"
+   ]
+  },
+  "pagination_param": {
+   "limit": [
+    "701x",
+    "agco",
+    "agriinfodesign",
+    "blues-wireless",
+    "carrier-global",
+    "esper",
+    "fleetbase",
+    "flipturn",
+    "foxglove-technologies",
+    "here",
+    "here-technologies",
+    "life360",
+    "lytx",
+    "maven-machines",
+    "mileiq",
+    "nash",
+    "onerail",
+    "picker",
+    "runbuggy",
+    "samsara",
+    "scale-computing",
+    "shiftmove",
+    "switchlabs",
+    "toro",
+    "toyota",
+    "travelcenters-of-america",
+    "travelers",
+    "viridi-parente",
+    "visteon"
+   ],
+   "page": [
+    "agriinfodesign",
+    "aloft",
+    "automile",
+    "automileab",
+    "automotive-grade-linux",
+    "bp",
+    "chargefox",
+    "finditparts",
+    "here",
+    "kardinal",
+    "lytx",
+    "maven-machines",
+    "mercedes-me",
+    "nash",
+    "onerail",
+    "optibus",
+    "otonomo",
+    "picker",
+    "root",
+    "runbuggy",
+    "ryder-system",
+    "sertica",
+    "shell",
+    "tekmetric",
+    "toro",
+    "toyota",
+    "trimble",
+    "viridi-parente"
+   ],
+   "page_size": [
+    "agriinfodesign",
+    "amazon-iot-device-management",
+    "blues-wireless",
+    "bp",
+    "cedarai",
+    "decisiv",
+    "inrix",
+    "lytx",
+    "mercedes-me",
+    "nash",
+    "otonomo",
+    "root",
+    "ryder-system",
+    "sertica",
+    "shell",
+    "trimble",
+    "viridi-parente"
+   ],
+   "offset": [
+    "701x",
+    "agco",
+    "esper",
+    "fleetbase",
+    "foxglove-technologies",
+    "here",
+    "lytx",
+    "maven-machines",
+    "nash",
+    "onerail",
+    "scale-computing",
+    "switchlabs",
+    "toyota",
+    "visteon"
+   ],
+   "cursor": [
+    "autopay",
+    "blues-wireless",
+    "esper",
+    "maven-machines",
+    "nash",
+    "switchlabs"
+   ],
+   "after": [
+    "aloft",
+    "here",
+    "nash",
+    "samsara"
+   ],
+   "skip": [
+    "automile",
+    "automileab",
+    "balena",
+    "picker"
+   ],
+   "page_token": [
+    "cedarai",
+    "circuit",
+    "here",
+    "volteras"
+   ],
+   "size": [
+    "here",
+    "nash",
+    "runbuggy",
+    "tekmetric"
+   ],
+   "top": [
+    "701x",
+    "balena",
+    "sertica"
+   ],
+   "start": [
+    "aloft",
+    "foxglove-technologies",
+    "here"
+   ],
+   "before": [
+    "aloft",
+    "here",
+    "nash"
+   ],
+   "max_results": [
+    "amazon-iot-device-management",
+    "amazon-iot-fleetwise"
+   ],
+   "per_page": [
+    "automotive-grade-linux",
+    "fleetio"
+   ],
+   "count": [
+    "here"
+   ],
+   "starting_after": [
+    "samsara"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "701x",
+    "agco",
+    "agriinfodesign",
+    "aloft",
+    "amazon-iot-device-management",
+    "automile",
+    "automileab",
+    "automotive-grade-linux",
+    "autopay",
+    "avis-budget",
+    "blues-wireless",
+    "bmw-connecteddrive",
+    "cat",
+    "cedarai",
+    "decisiv",
+    "esper",
+    "federal-highway-administration",
+    "fleetbase",
+    "fleetio",
+    "fleetsu",
+    "flipturn",
+    "foxglove-technologies",
+    "here",
+    "high-mobility",
+    "inrix",
+    "life360",
+    "lytx",
+    "maven-machines",
+    "mercedes-me",
+    "nash",
+    "onerail",
+    "otonomo",
+    "particle",
+    "picker",
+    "revvo",
+    "root",
+    "runbuggy",
+    "samsara",
+    "scale-computing",
+    "sertica",
+    "shiftmove",
+    "smartcar",
+    "switchlabs",
+    "tekmetric",
+    "toyota",
+    "track-pod",
+    "travelcenters-of-america",
+    "treadio",
+    "tronity",
+    "viridi-parente",
+    "volteras",
+    "workwave",
+    "zego"
+   ],
+   "camelCase": [
+    "701x",
+    "agco",
+    "agriinfodesign",
+    "amazon-iot-device-management",
+    "automile",
+    "automileab",
+    "autopay",
+    "blues-wireless",
+    "bmw-connecteddrive",
+    "bp",
+    "cat",
+    "circuit",
+    "cnh",
+    "esper",
+    "federal-highway-administration",
+    "fleetbase",
+    "fleetsu",
+    "foxglove-technologies",
+    "here",
+    "here-technologies",
+    "inrix",
+    "kardinal",
+    "loconav",
+    "locus-sh",
+    "lytx",
+    "maven-machines",
+    "mercedes-me",
+    "nash",
+    "onerail",
+    "optibus",
+    "particle",
+    "revvo",
+    "runbuggy",
+    "ryder-system",
+    "samsara",
+    "scale-computing",
+    "sertica",
+    "shell",
+    "shiftmove",
+    "switchlabs",
+    "toro",
+    "toyota",
+    "track-pod",
+    "trimble",
+    "trimble-agriculture",
+    "tronity",
+    "viridi-parente",
+    "visteon",
+    "workwave",
+    "zego"
+   ],
+   "snake_case": [
+    "agriinfodesign",
+    "aloft",
+    "autopay",
+    "avis-budget",
+    "decisiv",
+    "esper",
+    "finditparts",
+    "inrix",
+    "loconav",
+    "markforged",
+    "mileiq",
+    "nash",
+    "particle",
+    "root",
+    "routific",
+    "samsara",
+    "travelers",
+    "volteras"
+   ],
+   "PascalCase": [
+    "701x",
+    "agco",
+    "sertica"
+   ],
+   "kebab-case": [
+    "flipturn",
+    "treadio"
+   ],
+   "other": [
+    "otonomo",
+    "picker"
+   ]
+  },
+  "property": {
+   "lower": [
+    "avis-budget",
+    "blues-wireless",
+    "chargefox",
+    "circuit",
+    "decisiv",
+    "esper",
+    "federal-highway-administration",
+    "fleetbase",
+    "fleetio",
+    "flipturn",
+    "here",
+    "high-mobility",
+    "locus-sh",
+    "lytx",
+    "maven-machines",
+    "mercedes-me",
+    "nash",
+    "onerail",
+    "optibus",
+    "otonomo",
+    "revvo",
+    "samsara",
+    "sertica",
+    "shiftmove",
+    "smartcar",
+    "tekmetric",
+    "toro",
+    "toyota",
+    "treadio",
+    "tronity",
+    "uveye",
+    "volteras",
+    "workwave"
+   ],
+   "camelCase": [
+    "circuit",
+    "federal-highway-administration",
+    "flipturn",
+    "here",
+    "locus-sh",
+    "lytx",
+    "maven-machines",
+    "nash",
+    "onerail",
+    "optibus",
+    "otonomo",
+    "revvo",
+    "samsara",
+    "sertica",
+    "shiftmove",
+    "tekmetric",
+    "toro",
+    "toyota",
+    "uveye",
+    "volteras",
+    "workwave"
+   ],
+   "snake_case": [
+    "blues-wireless",
+    "chargefox",
+    "esper",
+    "federal-highway-administration",
+    "fleetbase",
+    "fleetio",
+    "high-mobility",
+    "otonomo",
+    "treadio",
+    "tronity"
+   ],
+   "PascalCase": [
+    "automile",
+    "automileab",
+    "here",
+    "lytx",
+    "track-pod"
+   ],
+   "other": [
+    "otonomo"
+   ]
+  }
+ }
+}

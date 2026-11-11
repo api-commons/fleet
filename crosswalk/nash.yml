@@ -1,0 +1,31 @@
+provider: nash
+apis_io: https://apis.io/providers/nash/
+context: fleet
+generated: '2026-11-10'
+concepts:
+  vehicle:
+    path_segment:
+    - vehicle
+    - vehicles
+    properties:
+      id: id
+      name: name
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/nash-openapi-original.json#GET /v1/vehicles
+    - openapi/_original/nash-openapi-original.json#POST /v1/vehicle
+  geofence:
+    path_segment:
+    - zones
+    properties:
+      id:
+      - id
+      - externalId
+      name: name
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/nash-openapi-original.json#DELETE /v1/zones/{id}
+    - openapi/_original/nash-openapi-original.json#GET /v1/zones
+    - openapi/_original/nash-openapi-original.json#GET /v1/zones/{id}
+    - openapi/_original/nash-openapi-original.json#PATCH /v1/zones/{id}
+    - openapi/_original/nash-openapi-original.json#POST /v1/zones

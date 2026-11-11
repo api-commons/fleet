@@ -1,0 +1,42 @@
+provider: optibus
+apis_io: https://apis.io/providers/optibus/
+context: fleet
+generated: '2026-11-10'
+concepts:
+  vehicle:
+    path_segment:
+    - vehicles
+    properties:
+      id: id
+      model: model
+      license_plate: licensePlate
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/optibus-operations-openapi.yml#GET /v1/vehicles
+    - openapi/_original/optibus-operations-openapi.yml#GET /vehicles
+    - openapi/_original/optibus-operations-openapi.yml#POST /v1/vehicles
+    - openapi/_original/optibus-operations-openapi.yml#PUT /v1/vehicles
+  driver:
+    path_segment:
+    - drivers
+    - driver
+    properties:
+      id:
+      - id
+      - uuid
+      first_name: firstName
+      last_name: lastName
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/optibus-operations-openapi.yml#GET /driver
+    - openapi/_original/optibus-operations-openapi.yml#GET /v2/drivers
+    - openapi/_original/optibus-operations-openapi.yml#POST /v1/drivers
+    - openapi/_original/optibus-operations-openapi.yml#POST /v2/drivers
+    - openapi/_original/optibus-operations-openapi.yml#PUT /v2/drivers
+  trip:
+    path_segment:
+    - trips
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/optibus-operations-openapi.yml#PATCH /private_hires/order/{orderId}/trips

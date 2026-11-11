@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/fleet/main/schema/vehicle_location.json",
+  "title": "Vehicle Location",
+  "description": "The common vehicle_location in Fleet and Telematics, distilled from 3 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "latitude": {
+      "type": "number",
+      "x-commons-tier": "core",
+      "x-commons-share": 1.0,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "latitude"
+      ]
+    },
+    "longitude": {
+      "type": "number",
+      "x-commons-tier": "core",
+      "x-commons-share": 1.0,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "longitude"
+      ]
+    },
+    "speed": {
+      "type": "number",
+      "x-commons-tier": "core",
+      "x-commons-share": 1.0,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "speed",
+        "speedMilesPerHour"
+      ]
+    },
+    "timestamp": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 1.0,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "dateTime",
+        "time",
+        "timestamp"
+      ]
+    }
+  },
+  "required": [],
+  "x-commons": {
+    "context": "fleet",
+    "concept": "vehicle_location",
+    "providers": 3,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

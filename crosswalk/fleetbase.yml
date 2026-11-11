@@ -1,0 +1,51 @@
+provider: fleetbase
+apis_io: https://apis.io/providers/fleetbase/
+context: fleet
+generated: '2026-11-10'
+concepts:
+  vehicle:
+    path_segment:
+    - vehicles
+    properties:
+      vin: vin
+      id: id
+      make: make
+      model: model
+      year: year
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/fleetbase-openapi.yml#DELETE /vehicles/{id}
+    - openapi/_original/fleetbase-openapi.yml#GET /vehicles
+    - openapi/_original/fleetbase-openapi.yml#GET /vehicles/{id}
+    - openapi/_original/fleetbase-openapi.yml#POST /vehicles
+    - openapi/_original/fleetbase-openapi.yml#PUT /vehicles/{id}
+  driver:
+    path_segment:
+    - drivers
+    properties:
+      id: id
+      name: name
+      phone: phone
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/fleetbase-openapi.yml#DELETE /drivers/{id}
+    - openapi/_original/fleetbase-openapi.yml#GET /drivers
+    - openapi/_original/fleetbase-openapi.yml#GET /drivers/{id}
+    - openapi/_original/fleetbase-openapi.yml#POST /drivers
+    - openapi/_original/fleetbase-openapi.yml#PUT /drivers/{id}
+  geofence:
+    path_segment:
+    - zones
+    properties:
+      id: id
+      name: name
+      description: description
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/fleetbase-openapi.yml#DELETE /zones/{id}
+    - openapi/_original/fleetbase-openapi.yml#GET /zones
+    - openapi/_original/fleetbase-openapi.yml#GET /zones/{id}
+    - openapi/_original/fleetbase-openapi.yml#POST /zones
+    - openapi/_original/fleetbase-openapi.yml#PUT /zones/{id}

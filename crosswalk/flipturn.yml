@@ -1,0 +1,24 @@
+provider: flipturn
+apis_io: https://apis.io/providers/flipturn/
+context: fleet
+generated: '2026-11-10'
+concepts:
+  vehicle:
+    path_segment:
+    - vehicles
+    - vehicle
+    properties:
+      vin: vin
+      id: id
+      make: make
+      model: model
+      license_plate: licensePlate
+      name: name
+      vehicle_id: vehicleId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/flipturn-openapi.yml#GET /vehicles
+    - openapi/_original/flipturn-openapi.yml#GET /vehicles/{id}
+    - openapi/_original/flipturn-openapi.yml#PATCH /vehicles/{id}
+    - openapi/_original/flipturn-openapi.yml#POST /departure-times/vehicle
+    - openapi/_original/flipturn-openapi.yml#POST /vehicles

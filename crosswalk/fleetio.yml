@@ -1,0 +1,20 @@
+provider: fleetio
+apis_io: https://apis.io/providers/fleetio/
+context: fleet
+generated: '2026-11-10'
+concepts:
+  vehicle:
+    path_segment:
+    - vehicles
+    properties:
+      vin: vin
+      id: id
+      license_plate: license_plate
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/fleetio-openapi.yml#DELETE /v1/vehicles/{id}
+    - openapi/_original/fleetio-openapi.yml#GET /v1/vehicles
+    - openapi/_original/fleetio-openapi.yml#GET /v1/vehicles/{id}
+    - openapi/_original/fleetio-openapi.yml#PATCH /v1/vehicles/{id}
+    - openapi/_original/fleetio-openapi.yml#POST /v1/vehicles

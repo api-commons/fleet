@@ -1,0 +1,178 @@
+context: fleet
+generated: '2026-11-10'
+adopters:
+- provider: automile
+  apis_io: https://apis.io/providers/automile/
+  crosswalk: crosswalk/automile.yml
+  concepts:
+  - geofence
+  - trip
+  - vehicle
+- provider: automileab
+  apis_io: https://apis.io/providers/automileab/
+  crosswalk: crosswalk/automileab.yml
+  concepts:
+  - geofence
+  - trip
+  - vehicle
+- provider: autopay
+  apis_io: https://apis.io/providers/autopay/
+  crosswalk: crosswalk/autopay.yml
+  concepts:
+  - vehicle
+- provider: avis-budget
+  apis_io: https://apis.io/providers/avis-budget/
+  crosswalk: crosswalk/avis-budget.yml
+  concepts:
+  - vehicle
+- provider: chargefox
+  apis_io: https://apis.io/providers/chargefox/
+  crosswalk: crosswalk/chargefox.yml
+  concepts:
+  - vehicle
+- provider: fleetbase
+  apis_io: https://apis.io/providers/fleetbase/
+  crosswalk: crosswalk/fleetbase.yml
+  concepts:
+  - driver
+  - geofence
+  - vehicle
+- provider: fleetio
+  apis_io: https://apis.io/providers/fleetio/
+  crosswalk: crosswalk/fleetio.yml
+  concepts:
+  - vehicle
+- provider: flipturn
+  apis_io: https://apis.io/providers/flipturn/
+  crosswalk: crosswalk/flipturn.yml
+  concepts:
+  - vehicle
+- provider: high-mobility
+  apis_io: https://apis.io/providers/high-mobility/
+  crosswalk: crosswalk/high-mobility.yml
+  concepts:
+  - vehicle
+- provider: loconav
+  apis_io: https://apis.io/providers/loconav/
+  crosswalk: crosswalk/loconav.yml
+  concepts:
+  - driver
+  - trip
+  - vehicle
+- provider: locus-sh
+  apis_io: https://apis.io/providers/locus-sh/
+  crosswalk: crosswalk/locus-sh.yml
+  concepts:
+  - vehicle
+- provider: lytx
+  apis_io: https://apis.io/providers/lytx/
+  crosswalk: crosswalk/lytx.yml
+  concepts:
+  - driver
+  - geofence
+  - inspection
+  - trip
+  - vehicle
+  - vehicle_location
+- provider: maven-machines
+  apis_io: https://apis.io/providers/maven-machines/
+  crosswalk: crosswalk/maven-machines.yml
+  concepts:
+  - trip
+  - vehicle
+- provider: mercedes-me
+  apis_io: https://apis.io/providers/mercedes-me/
+  crosswalk: crosswalk/mercedes-me.yml
+  concepts:
+  - vehicle
+- provider: nash
+  apis_io: https://apis.io/providers/nash/
+  crosswalk: crosswalk/nash.yml
+  concepts:
+  - geofence
+  - vehicle
+- provider: optibus
+  apis_io: https://apis.io/providers/optibus/
+  crosswalk: crosswalk/optibus.yml
+  concepts:
+  - driver
+  - trip
+  - vehicle
+- provider: otonomo
+  apis_io: https://apis.io/providers/otonomo/
+  crosswalk: crosswalk/otonomo.yml
+  concepts:
+  - trip
+  - vehicle
+- provider: revvo
+  apis_io: https://apis.io/providers/revvo/
+  crosswalk: crosswalk/revvo.yml
+  concepts:
+  - vehicle
+- provider: samsara
+  apis_io: https://apis.io/providers/samsara/
+  crosswalk: crosswalk/samsara.yml
+  concepts:
+  - driver
+  - inspection
+  - trip
+  - vehicle
+  - vehicle_location
+- provider: shiftmove
+  apis_io: https://apis.io/providers/shiftmove/
+  crosswalk: crosswalk/shiftmove.yml
+  concepts:
+  - driver
+  - vehicle
+- provider: skydio
+  apis_io: https://apis.io/providers/skydio/
+  crosswalk: crosswalk/skydio.yml
+  concepts:
+  - vehicle
+- provider: smartcar
+  apis_io: https://apis.io/providers/smartcar/
+  crosswalk: crosswalk/smartcar.yml
+  concepts:
+  - vehicle
+- provider: tekmetric
+  apis_io: https://apis.io/providers/tekmetric/
+  crosswalk: crosswalk/tekmetric.yml
+  concepts:
+  - vehicle
+- provider: toyota
+  apis_io: https://apis.io/providers/toyota/
+  crosswalk: crosswalk/toyota.yml
+  concepts:
+  - trip
+  - vehicle
+- provider: track-pod
+  apis_io: https://apis.io/providers/track-pod/
+  crosswalk: crosswalk/track-pod.yml
+  concepts:
+  - driver
+  - vehicle
+- provider: tronity
+  apis_io: https://apis.io/providers/tronity/
+  crosswalk: crosswalk/tronity.yml
+  concepts:
+  - trip
+  - vehicle
+- provider: uveye
+  apis_io: https://apis.io/providers/uveye/
+  crosswalk: crosswalk/uveye.yml
+  concepts:
+  - inspection
+  - vehicle
+- provider: volteras
+  apis_io: https://apis.io/providers/volteras/
+  crosswalk: crosswalk/volteras.yml
+  concepts:
+  - trip
+  - vehicle
+- provider: workwave
+  apis_io: https://apis.io/providers/workwave/
+  crosswalk: crosswalk/workwave.yml
+  concepts:
+  - driver
+  - vehicle
+  - vehicle_location

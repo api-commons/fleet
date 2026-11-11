@@ -1,0 +1,34 @@
+provider: loconav
+apis_io: https://apis.io/providers/loconav/
+context: fleet
+generated: '2026-11-10'
+concepts:
+  vehicle:
+    path_segment:
+    - vehicles
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/loconav-integration-openapi.yml#GET /integration/api/v1/vehicles
+    - openapi/_original/loconav-integration-openapi.yml#GET /integration/api/v1/vehicles/{vehicleId}
+  driver:
+    path_segment:
+    - drivers
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/loconav-integration-openapi.yml#DELETE /integration/api/v1/drivers/{driverId}
+    - openapi/_original/loconav-integration-openapi.yml#GET /integration/api/v1/drivers
+    - openapi/_original/loconav-integration-openapi.yml#GET /integration/api/v1/drivers/{driverId}
+    - openapi/_original/loconav-integration-openapi.yml#POST /integration/api/v1/drivers
+    - openapi/_original/loconav-integration-openapi.yml#PUT /integration/api/v1/drivers/{driverId}
+  trip:
+    path_segment:
+    - trips
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/loconav-integration-openapi.yml#DELETE /integration/api/v1/trips/{tripId}
+    - openapi/_original/loconav-integration-openapi.yml#GET /integration/api/v1/trips
+    - openapi/_original/loconav-integration-openapi.yml#POST /integration/api/v1/trips
+    - openapi/_original/loconav-integration-openapi.yml#PUT /integration/api/v1/trips/{tripId}

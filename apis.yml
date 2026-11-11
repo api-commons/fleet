@@ -1,0 +1,60 @@
+aid: common-fleet
+name: Fleet and Telematics
+type: Common
+description: 'The common Fleet and Telematics vocabulary, distilled from the harvested OpenAPI of 85 providers in
+  APIs.io: shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names
+  to each provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Fleet Management
+- Telematics
+- Connected Vehicles
+- Fleet
+- Common Schema
+created: '2026-11-10'
+modified: '2026-11-10'
+url: https://raw.githubusercontent.com/api-commons/fleet/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-fleet:fleet
+  name: Common Fleet and Telematics Interface
+  description: The Fleet and Telematics interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/fleet
+  tags:
+  - Fleet Management
+  - Telematics
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/fleet/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/fleet/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/fleet/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: vehicle
+    url: https://raw.githubusercontent.com/api-commons/fleet/main/schema/vehicle.json
+  - type: JSONSchema
+    name: driver
+    url: https://raw.githubusercontent.com/api-commons/fleet/main/schema/driver.json
+  - type: JSONSchema
+    name: trip
+    url: https://raw.githubusercontent.com/api-commons/fleet/main/schema/trip.json
+  - type: JSONSchema
+    name: vehicle_location
+    url: https://raw.githubusercontent.com/api-commons/fleet/main/schema/vehicle_location.json
+  - type: JSONSchema
+    name: geofence
+    url: https://raw.githubusercontent.com/api-commons/fleet/main/schema/geofence.json
+  - type: JSONSchema
+    name: inspection
+    url: https://raw.githubusercontent.com/api-commons/fleet/main/schema/inspection.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/fleet/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

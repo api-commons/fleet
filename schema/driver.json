@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/fleet/main/schema/driver.json",
+  "title": "Driver",
+  "description": "The common driver in Fleet and Telematics, distilled from 7 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 1.0,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "id",
+        "uuid",
+        "externalIds",
+        "Id"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.857,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "name",
+        "Name",
+        "Title"
+      ]
+    },
+    "phone": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.714,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "phone",
+        "phoneNumber",
+        "Phone"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.571,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "status",
+        "state",
+        "Active",
+        "Status"
+      ]
+    },
+    "first_name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.429,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "firstName"
+      ]
+    },
+    "last_name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.429,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "lastName"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "fleet",
+    "concept": "driver",
+    "providers": 7,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

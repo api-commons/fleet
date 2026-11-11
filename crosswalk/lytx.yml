@@ -1,0 +1,102 @@
+provider: lytx
+apis_io: https://apis.io/providers/lytx/
+context: fleet
+generated: '2026-11-10'
+concepts:
+  vehicle:
+    path_segment:
+    - vehicles
+    properties:
+      vin: vin
+      id: id
+      status: status
+      name: name
+      vehicle_id: vehicleId
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/lytx-legacy.vehicleinfo.aggregator-openapi.yml#GET /vehicles
+    - openapi/_original/lytx-legacy.vehicleinfo.aggregator-openapi.yml#GET /vehicles/{vehicleId}
+    - openapi/_original/lytx-legacy.videoplatform-openapi.yml#GET /vehicles
+    - openapi/_original/lytx-legacy.videoplatform-openapi.yml#GET /vehicles/{vehicleIdentifier}
+    - openapi/_original/lytx-video-openapi.yml#GET /vehicles
+  driver:
+    path_segment:
+    - drivers
+    properties:
+      id: id
+      name: name
+      phone: phoneNumber
+      first_name: firstName
+      last_name: lastName
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/lytx-driversplus-openapi.yml#GET /plus/v1/drivers
+  trip:
+    path_segment:
+    - trips
+    properties:
+      id:
+      - tripId
+      - id
+      start_at:
+      - startTime
+      - startDate
+      - start
+      vehicle_id:
+      - vehicle
+      - vehicleId
+      distance:
+      - distanceKm
+      - distance
+      end_at:
+      - endTime
+      - endDate
+      end_location:
+      - endLocation
+      - endPosition
+      start_location:
+      - startLocation
+      - startPosition
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/lytx-legacy.driversession.services-openapi.yml#POST /trips
+    - openapi/_original/lytx-trips-openapi.yml#GET /v1/trips
+    - openapi/_original/lytx-tripsplus-openapi.yml#GET /plus/v1/trips
+  vehicle_location:
+    path_segment:
+    - gps
+    properties:
+      latitude: latitude
+      longitude: longitude
+      speed: speed
+      timestamp: dateTime
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/lytx-gps-openapi.yml#GET /v1/gps
+    - openapi/_original/lytx-gpsplus-openapi.yml#GET /plus/v1/gps
+  geofence:
+    path_segment:
+    - geofences
+    - zones
+    properties:
+      id:
+      - geofenceId
+      - id
+      name: name
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/lytx-geofences-openapi.yml#DELETE /v1/geofences/{geofenceIdentifier}
+    - openapi/_original/lytx-geofences-openapi.yml#GET /v1/geofences
+    - openapi/_original/lytx-geofences-openapi.yml#POST /v1/geofences
+    - openapi/_original/lytx-geofences-openapi.yml#PUT /v1/geofences/{geofenceIdentifier}
+    - openapi/_original/lytx-zonesplus-openapi.yml#GET /plus/v1/zones
+  inspection:
+    path_segment:
+    - dvir
+    properties:
+      id: id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/lytx-dvir-openapi.yml#GET /v1/dvir
+    - openapi/_original/lytx-dvir-openapi.yml#GET /v1/dvir/{reportIdentifier}
+    - openapi/_original/lytx-dvirplus-openapi.yml#GET /plus/v1/dvir

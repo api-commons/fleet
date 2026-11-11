@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/fleet/main/schema/vehicle.json",
+  "title": "Vehicle",
+  "description": "The common vehicle in Fleet and Telematics, distilled from 26 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "vin": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.692,
+      "x-commons-providers": 18,
+      "x-commons-spellings": [
+        "vin",
+        "VehicleIdentificationNumber"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.654,
+      "x-commons-providers": 17,
+      "x-commons-spellings": [
+        "id",
+        "uuid",
+        "externalIds",
+        "guid",
+        "Id"
+      ]
+    },
+    "make": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 13,
+      "x-commons-spellings": [
+        "make",
+        "Make",
+        "brand"
+      ]
+    },
+    "model": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 13,
+      "x-commons-spellings": [
+        "model",
+        "Model",
+        "modelName"
+      ]
+    },
+    "license_plate": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.423,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "licensePlate",
+        "NumberPlate",
+        "license_plate",
+        "registration_number",
+        "registrationNumber",
+        "licensePlateNumber"
+      ]
+    },
+    "year": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.385,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "year",
+        "ModelYear",
+        "modelYear"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.346,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "status",
+        "isActive",
+        "vehicleStatus",
+        "state",
+        "Status"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.308,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "name",
+        "displayName",
+        "Title"
+      ]
+    },
+    "vehicle_id": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.308,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "vehicleId",
+        "VehicleId",
+        "assetId",
+        "unitId"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "fleet",
+    "concept": "vehicle",
+    "providers": 26,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

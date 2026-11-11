@@ -1,0 +1,22 @@
+provider: tronity
+apis_io: https://apis.io/providers/tronity/
+context: fleet
+generated: '2026-11-10'
+concepts:
+  vehicle:
+    path_segment:
+    - vehicles
+    properties:
+      id: id
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/tronity-openapi.yml#DELETE /v1/vehicles/{id}
+    - openapi/_original/tronity-openapi.yml#GET /v1/vehicles
+    - openapi/_original/tronity-openapi.yml#GET /v1/vehicles/{id}
+  trip:
+    path_segment:
+    - trips
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/tronity-openapi.yml#GET /v1/vehicles/{vehicleId}/trips

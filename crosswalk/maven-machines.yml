@@ -1,0 +1,36 @@
+provider: maven-machines
+apis_io: https://apis.io/providers/maven-machines/
+context: fleet
+generated: '2026-11-10'
+concepts:
+  vehicle:
+    path_segment:
+    - vehicles
+    properties:
+      vin: vin
+      id: id
+      make: make
+      model: model
+      license_plate: licensePlateNumber
+      year: year
+      status: vehicleStatus
+      vehicle_id: assetId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/maven-machines-assets-openapi.json#GET /vehicles
+    - openapi/_original/maven-machines-assets-openapi.json#GET /vehicles/{vehicleNumber}
+    - openapi/_original/maven-machines-assets-openapi.json#PATCH /vehicles/{vehicleNumber}
+    - openapi/_original/maven-machines-assets-openapi.json#POST /vehicles
+    - openapi/_original/maven-machines-rest-service-manual-openapi.json#GET /locations/vehicles
+  trip:
+    path_segment:
+    - trips
+    - trip
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/maven-machines-eld-hos-openapi.json#POST /linehaul/trip
+    - openapi/_original/maven-machines-linehaul-openapi.json#POST /linehaul/trip
+    - openapi/_original/maven-machines-workflow-openapi.json#DELETE /truckload/trips
+    - openapi/_original/maven-machines-workflow-openapi.json#GET /truckload/trips
+    - openapi/_original/maven-machines-workflow-openapi.json#PATCH /truckload/trips

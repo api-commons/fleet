@@ -1,0 +1,14 @@
+provider: autopay
+apis_io: https://apis.io/providers/autopay/
+context: fleet
+generated: '2026-11-10'
+concepts:
+  vehicle:
+    path_segment:
+    - vehicles
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/autopay-openapi.yml#DELETE /fleet/v2/vehicles
+    - openapi/_original/autopay-openapi.yml#GET /fleet/v2/vehicles
+    - openapi/_original/autopay-openapi.yml#POST /fleet/v2/vehicles

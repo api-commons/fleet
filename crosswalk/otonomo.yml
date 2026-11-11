@@ -1,0 +1,25 @@
+provider: otonomo
+apis_io: https://apis.io/providers/otonomo/
+context: fleet
+generated: '2026-11-10'
+concepts:
+  vehicle:
+    path_segment:
+    - vehicles
+    properties:
+      vin: vin
+      make: make
+      status: status
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/otonomo-fleet-openapi.yml#GET /v2/vehicle-management/vehicles/
+    - openapi/_original/otonomo-fleet-openapi.yml#POST /v2/vehicle-management/vehicles/
+  trip:
+    path_segment:
+    - trips
+    properties:
+      start_at: start_at
+      end_at: end_at
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/otonomo-fleet-openapi.yml#POST /v1/personal/reports/trips

@@ -1,0 +1,44 @@
+provider: workwave
+apis_io: https://apis.io/providers/workwave/
+context: fleet
+generated: '2026-11-10'
+concepts:
+  vehicle:
+    path_segment:
+    - vehicles
+    properties:
+      id: id
+      status: status
+      name: name
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/workwave-openapi.yml#DELETE /territories/{territoryId}/vehicles
+    - openapi/_original/workwave-openapi.yml#DELETE /territories/{territoryId}/vehicles/{vehicleId}
+    - openapi/_original/workwave-openapi.yml#GET /territories/{territoryId}/vehicles
+    - openapi/_original/workwave-openapi.yml#GET /territories/{territoryId}/vehicles/{date}
+    - openapi/_original/workwave-openapi.yml#GET /territories/{territoryId}/vehicles/{vehicleId}
+  driver:
+    path_segment:
+    - drivers
+    properties:
+      id: id
+      name: name
+      status: status
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/workwave-openapi.yml#DELETE /territories/{territoryId}/drivers/{driverId}
+    - openapi/_original/workwave-openapi.yml#GET /territories/{territoryId}/drivers
+    - openapi/_original/workwave-openapi.yml#POST /territories/{territoryId}/drivers
+    - openapi/_original/workwave-openapi.yml#PUT /territories/{territoryId}/drivers
+    - openapi/_original/workwave-openapi.yml#PUT /territories/{territoryId}/drivers/{driverId}
+  vehicle_location:
+    path_segment:
+    - gps
+    properties:
+      latitude: latitude
+      longitude: longitude
+      speed: speed
+      timestamp: timestamp
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/workwave-openapi.yml#GET /territories/{territoryId}/gps

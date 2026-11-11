@@ -1,0 +1,428 @@
+openapi: 3.1.0
+info:
+  title: Fleet and Telematics (API Commons)
+  version: 0.1.0-draft.20261110
+  description: 'The common Fleet and Telematics interface, distilled from the harvested OpenAPI of 85 providers
+    in the APIs.io catalog. Not a product: no one serves this API. It is the shape the market already shares, measured,
+    so that providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /vehicles:
+    get:
+      operationId: listVehicles
+      summary: List vehicles
+      tags:
+      - Vehicles
+      x-commons-tier: core
+      x-commons-share: 0.862
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/Vehicle'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createVehicle
+      summary: Create a vehicle
+      tags:
+      - Vehicles
+      x-commons-tier: core
+      x-commons-share: 0.552
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /vehicles/{vehicle_id}:
+    parameters:
+    - $ref: '#/components/parameters/vehicle_id'
+    get:
+      operationId: getVehicle
+      summary: Get a vehicle
+      tags:
+      - Vehicles
+      x-commons-tier: core
+      x-commons-share: 0.69
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    delete:
+      operationId: deleteVehicle
+      summary: Delete a vehicle
+      tags:
+      - Vehicles
+      x-commons-tier: extended
+      x-commons-share: 0.31
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    patch:
+      operationId: updateVehicle
+      summary: Update a vehicle
+      tags:
+      - Vehicles
+      x-commons-tier: extended
+      x-commons-share: 0.31
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /drivers:
+    get:
+      operationId: listDrivers
+      summary: List drivers
+      tags:
+      - Drivers
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id002
+                  $ref: '#/components/schemas/Driver'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createDriver
+      summary: Create a driver
+      tags:
+      - Drivers
+      x-commons-tier: core
+      x-commons-share: 0.875
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /drivers/{driver_id}:
+    parameters:
+    - $ref: '#/components/parameters/driver_id'
+    get:
+      operationId: getDriver
+      summary: Get a driver
+      tags:
+      - Drivers
+      x-commons-tier: core
+      x-commons-share: 0.5
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+    patch:
+      operationId: updateDriver
+      summary: Update a driver
+      tags:
+      - Drivers
+      x-commons-tier: core
+      x-commons-share: 0.5
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+    delete:
+      operationId: deleteDriver
+      summary: Delete a driver
+      tags:
+      - Drivers
+      x-commons-tier: extended
+      x-commons-share: 0.375
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+  /trips:
+    get:
+      operationId: listTrips
+      summary: List trips
+      tags:
+      - Trips
+      x-commons-tier: core
+      x-commons-share: 0.818
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id003
+                  $ref: '#/components/schemas/Trip'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createTrip
+      summary: Create a trip
+      tags:
+      - Trips
+      x-commons-tier: extended
+      x-commons-share: 0.364
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /trips/{trip_id}:
+    parameters:
+    - $ref: '#/components/parameters/trip_id'
+    patch:
+      operationId: updateTrip
+      summary: Update a trip
+      tags:
+      - Trips
+      x-commons-tier: extended
+      x-commons-share: 0.273
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /vehicles/{vehicle_id}/locations:
+    parameters:
+    - $ref: '#/components/parameters/vehicle_id'
+    get:
+      operationId: listVehicleLocations
+      summary: List locations
+      tags:
+      - Vehicle Locations
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/VehicleLocation'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+  /geofences/{geofence_id}:
+    parameters:
+    - $ref: '#/components/parameters/geofence_id'
+    delete:
+      operationId: deleteGeofence
+      summary: Delete a geofence
+      tags:
+      - Geofences
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: &id004
+                $ref: '#/components/schemas/Geofence'
+    patch:
+      operationId: updateGeofence
+      summary: Update a geofence
+      tags:
+      - Geofences
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+    get:
+      operationId: getGeofence
+      summary: Get a geofence
+      tags:
+      - Geofences
+      x-commons-tier: core
+      x-commons-share: 0.8
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+  /geofences:
+    get:
+      operationId: listGeofences
+      summary: List geofences
+      tags:
+      - Geofences
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: *id004
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createGeofence
+      summary: Create a geofence
+      tags:
+      - Geofences
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+components:
+  schemas:
+    Vehicle:
+      $ref: ./schema/vehicle.json
+    Driver:
+      $ref: ./schema/driver.json
+    Trip:
+      $ref: ./schema/trip.json
+    VehicleLocation:
+      $ref: ./schema/vehicle_location.json
+    Geofence:
+      $ref: ./schema/geofence.json
+    Inspection:
+      $ref: ./schema/inspection.json
+  parameters:
+    vehicle_id:
+      name: vehicle_id
+      in: path
+      required: true
+      schema:
+        type: string
+    driver_id:
+      name: driver_id
+      in: path
+      required: true
+      schema:
+        type: string
+    trip_id:
+      name: trip_id
+      in: path
+      required: true
+      schema:
+        type: string
+    vehicle_location_id:
+      name: vehicle_location_id
+      in: path
+      required: true
+      schema:
+        type: string
+    geofence_id:
+      name: geofence_id
+      in: path
+      required: true
+      schema:
+        type: string
+    inspection_id:
+      name: inspection_id
+      in: path
+      required: true
+      schema:
+        type: string

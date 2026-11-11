@@ -1,0 +1,40 @@
+provider: toyota
+apis_io: https://apis.io/providers/toyota/
+context: fleet
+generated: '2026-11-10'
+concepts:
+  vehicle:
+    path_segment:
+    - vehicles
+    properties:
+      vin: vin
+      id: guid
+      make: make
+      model: model
+      year: year
+      vehicle_id: unitId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/toyota-connected-services-openapi.yml#GET /vehicles
+    - openapi/_original/toyota-connected-services-openapi.yml#GET /vehicles/{vin}
+    - openapi/_original/toyota-connected-services-openapi.yml#PUT /vehicles/{vin}
+    - openapi/_original/toyota-telematics-openapi.yml#GET /fleet/{fleetId}/vehicles
+    - openapi/_original/toyota-telematics-openapi.yml#GET /vehicles
+  trip:
+    path_segment:
+    - trips
+    properties:
+      id: id
+      start_at: startTime
+      distance: distanceMiles
+      end_at: endTime
+      end_location:
+      - endAddress
+      - endLocation
+      start_location:
+      - startAddress
+      - startLocation
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/toyota-connected-services-openapi.yml#GET /vehicles/{vin}/trips
+    - openapi/_original/toyota-telematics-openapi.yml#GET /vehicles/{vin}/trips

@@ -1,0 +1,12 @@
+provider: skydio
+apis_io: https://apis.io/providers/skydio/
+context: fleet
+generated: '2026-11-10'
+concepts:
+  vehicle:
+    path_segment:
+    - vehicles
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/skydio-openapi.yml#GET /vehicles

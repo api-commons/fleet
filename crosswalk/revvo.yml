@@ -1,0 +1,16 @@
+provider: revvo
+apis_io: https://apis.io/providers/revvo/
+context: fleet
+generated: '2026-11-10'
+concepts:
+  vehicle:
+    path_segment:
+    - vehicle
+    properties:
+      vin: vin
+      vehicle_id: assetId
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/revvo-api-openapi-original.yml#GET /fleet/{fleetId}/vehicle/{vin}
+    - openapi/_original/revvo-api-openapi-original.yml#POST /fleet/{fleetId}/vehicle
+    - openapi/_original/revvo-api-openapi-original.yml#PUT /fleet/{fleetId}/vehicle

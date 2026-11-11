@@ -1,0 +1,80 @@
+provider: samsara
+apis_io: https://apis.io/providers/samsara/
+context: fleet
+generated: '2026-11-10'
+concepts:
+  vehicle:
+    path_segment:
+    - vehicles
+    - vehicle
+    - assets
+    properties:
+      vin: vin
+      id:
+      - externalIds
+      - id
+      make: make
+      model: model
+      license_plate: licensePlate
+      year: year
+      name: name
+      vehicle_id: vehicleId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/samsara-openapi.yml#GET /fleet/reports/ifta/vehicle
+    - openapi/_original/samsara-openapi.yml#GET /fleet/vehicles
+    - openapi/_original/samsara-openapi.yml#GET /fleet/vehicles/{id}
+    - openapi/_original/samsara-openapi.yml#GET /preview/driver-efficiency/vehicles
+    - openapi/_original/samsara-openapi.yml#GET /v1/fleet/assets
+  driver:
+    path_segment:
+    - drivers
+    properties:
+      id:
+      - externalIds
+      - id
+      name: name
+      phone: phone
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/samsara-openapi.yml#GET /fleet/drivers
+    - openapi/_original/samsara-openapi.yml#GET /fleet/drivers/{id}
+    - openapi/_original/samsara-openapi.yml#GET /preview/driver-efficiency/drivers
+    - openapi/_original/samsara-openapi.yml#PATCH /fleet/drivers/{id}
+    - openapi/_original/samsara-openapi.yml#POST /fleet/drivers
+  trip:
+    path_segment:
+    - trips
+    properties:
+      distance: distanceMeters
+      end_location:
+      - endAddress
+      - endLocation
+      start_location:
+      - startAddress
+      - startLocation
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/samsara-openapi.yml#GET /v1/fleet/trips
+  vehicle_location:
+    path_segment:
+    - locations
+    properties:
+      latitude: latitude
+      longitude: longitude
+      speed: speedMilesPerHour
+      timestamp: time
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/samsara-openapi.yml#GET /fleet/vehicles/locations
+    - openapi/_original/samsara-openapi.yml#GET /v1/fleet/assets/locations
+    - openapi/_original/samsara-openapi.yml#GET /v1/fleet/assets/{asset_id}/locations
+  inspection:
+    path_segment:
+    - dvirs
+    properties:
+      id: id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/samsara-openapi.yml#PATCH /fleet/dvirs/{id}
+    - openapi/_original/samsara-openapi.yml#POST /fleet/dvirs

@@ -1,0 +1,18 @@
+provider: high-mobility
+apis_io: https://apis.io/providers/high-mobility/
+context: fleet
+generated: '2026-11-10'
+concepts:
+  vehicle:
+    path_segment:
+    - vehicles
+    properties:
+      vin: vin
+      make: brand
+      license_plate: license_plate
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/high-mobility-openapi.yml#DELETE /v1/fleet/vehicles/{vin}
+    - openapi/_original/high-mobility-openapi.yml#GET /v1/fleet/vehicles
+    - openapi/_original/high-mobility-openapi.yml#GET /v1/fleet/vehicles/{vin}
+    - openapi/_original/high-mobility-openapi.yml#POST /v1/fleet/vehicles

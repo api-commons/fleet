@@ -1,0 +1,14 @@
+provider: avis-budget
+apis_io: https://apis.io/providers/avis-budget/
+context: fleet
+generated: '2026-11-10'
+concepts:
+  vehicle:
+    path_segment:
+    - vehicles
+    properties:
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/avis-budget-rental-cars-openapi.json#GET /cars/catalog/v2/vehicles
+    - openapi/_original/avis-budget-rental-cars-openapi.yml#GET /cars/catalog/v2/vehicles

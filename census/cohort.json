@@ -1,0 +1,745 @@
+[
+ {
+  "slug": "701x",
+  "specs": [
+   "openapi/_original/701x-api-v1-openapi.json"
+  ]
+ },
+ {
+  "slug": "agco",
+  "specs": [
+   "openapi/_original/agco-agcommand-api-openapi.yml",
+   "openapi/_original/agco-ats-api-swagger.json"
+  ]
+ },
+ {
+  "slug": "agriinfodesign",
+  "specs": [
+   "openapi/_original/agriinfodesign-auth-openapi.json",
+   "openapi/_original/agriinfodesign-auth-openapi.yml",
+   "openapi/_original/agriinfodesign-datastore-openapi.json",
+   "openapi/_original/agriinfodesign-datastore-openapi.yml",
+   "openapi/_original/agriinfodesign-manager-swagger.json",
+   "openapi/_original/agriinfodesign-manager-swagger_2.json",
+   "openapi/_original/agriinfodesign-pay-openapi.json",
+   "openapi/_original/agriinfodesign-pay-openapi.yml"
+  ]
+ },
+ {
+  "slug": "aloft",
+  "specs": [
+   "openapi/_original/aloft-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "amazon-iot-device-management",
+  "specs": [
+   "openapi/_original/amazon-iot-device-management-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "amazon-iot-fleetwise",
+  "specs": [
+   "openapi/_original/amazon-iot-fleetwise-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "automile",
+  "specs": [
+   "openapi/_original/automile-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "automileab",
+  "specs": [
+   "openapi/_original/automileab-openapi.json"
+  ]
+ },
+ {
+  "slug": "automotive-grade-linux",
+  "specs": [
+   "openapi/_original/automotive-grade-linux-events-api-openapi.json",
+   "openapi/_original/automotive-grade-linux-events-tec-v1-openapi.json"
+  ]
+ },
+ {
+  "slug": "autopay",
+  "specs": [
+   "openapi/_original/autopay-openapi.yml"
+  ]
+ },
+ {
+  "slug": "avis-budget",
+  "specs": [
+   "openapi/_original/avis-budget-rental-cars-openapi.json",
+   "openapi/_original/avis-budget-rental-cars-openapi.yml"
+  ]
+ },
+ {
+  "slug": "balena",
+  "specs": [
+   "openapi/_original/balena-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bear-robotics",
+  "specs": [
+   "openapi/_original/bear-robotics-cloud-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "bird-rides",
+  "specs": [
+   "openapi/_original/bird-gbfs-openapi.yml"
+  ]
+ },
+ {
+  "slug": "blues-wireless",
+  "specs": [
+   "openapi/_original/blues-wireless-notehub-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bmw-connecteddrive",
+  "specs": [
+   "openapi/_original/bmw-cardata-customer-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "bp",
+  "specs": [
+   "openapi/_original/bp-fleet-aral-appconnect-openapi.json",
+   "openapi/_original/bp-fleet-authentication-openapi.json",
+   "openapi/_original/bp-fleet-card-management-openapi.json",
+   "openapi/_original/bp-fleet-invoice-management-openapi.json",
+   "openapi/_original/bp-fleet-retail-site-information-openapi.json",
+   "openapi/_original/bp-fleet-transaction-management-openapi.json"
+  ]
+ },
+ {
+  "slug": "bringg",
+  "specs": [
+   "openapi/_original/bringg-delivery-hub-api-openapi.yml",
+   "openapi/_original/bringg-drivers-shifts-api-openapi.yml",
+   "openapi/_original/bringg-fleet-partners-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "carrier-global",
+  "specs": [
+   "openapi/_original/carrier-global-lynx-2way-command-api-openapi.yaml",
+   "openapi/_original/carrier-global-lynx-container-api-openapi.yaml",
+   "openapi/_original/carrier-global-lynx-fleet-api-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "cat",
+  "specs": [
+   "openapi/_original/cat-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cedarai",
+  "specs": [
+   "openapi/_original/cedarai-charge-openapi.yml",
+   "openapi/_original/cedarai-external-openapi.yml",
+   "openapi/_original/cedarai-invoices-openapi.yml",
+   "openapi/_original/cedarai-linda-notes-openapi.yml",
+   "openapi/_original/cedarai-load-tender-openapi.yml",
+   "openapi/_original/cedarai-network-structure-openapi.yml",
+   "openapi/_original/cedarai-quotes-openapi.yml",
+   "openapi/_original/cedarai-work-order-openapi.yml"
+  ]
+ },
+ {
+  "slug": "chargefox",
+  "specs": [
+   "openapi/_original/chargefox-fleets-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "circuit",
+  "specs": [
+   "openapi/_original/circuit-v0.2b-openapi-original.json",
+   "openapi/_original/circuit-v1-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "cnh",
+  "specs": [
+   "openapi/_original/cnh-fieldops-openapi.yml"
+  ]
+ },
+ {
+  "slug": "decisiv",
+  "specs": [
+   "openapi/_original/decisiv-account-management-openapi.json",
+   "openapi/_original/decisiv-account-management-openapi.yml",
+   "openapi/_original/decisiv-asset-management-openapi.json",
+   "openapi/_original/decisiv-asset-management-openapi.yml",
+   "openapi/_original/decisiv-global-assets-openapi.yml",
+   "openapi/_original/decisiv-global-assets-swagger.json",
+   "openapi/_original/decisiv-service-management-openapi.json",
+   "openapi/_original/decisiv-service-management-openapi.yml",
+   "openapi/_original/decisiv-service-provider-openapi.yml",
+   "openapi/_original/decisiv-service-provider-swagger.json",
+   "openapi/_original/decisiv-srm-gateway-index-openapi.json",
+   "openapi/_original/decisiv-telematics-openapi.json",
+   "openapi/_original/decisiv-telematics-openapi.yml"
+  ]
+ },
+ {
+  "slug": "esper",
+  "specs": [
+   "openapi/_original/esper-openapi.json"
+  ]
+ },
+ {
+  "slug": "federal-highway-administration",
+  "specs": [
+   "openapi/_original/federal-highway-administration-v2x-app-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "finditparts",
+  "specs": [
+   "openapi/_original/finditparts-reseller-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "fleetbase",
+  "specs": [
+   "openapi/_original/fleetbase-openapi.yml"
+  ]
+ },
+ {
+  "slug": "fleetio",
+  "specs": [
+   "openapi/_original/fleetio-openapi.yml"
+  ]
+ },
+ {
+  "slug": "fleetsu",
+  "specs": [
+   "openapi/_original/fleetsu-openapi.yml",
+   "openapi/_original/fleetsu-postman-collection.json"
+  ]
+ },
+ {
+  "slug": "flipturn",
+  "specs": [
+   "openapi/_original/flipturn-openapi.yml"
+  ]
+ },
+ {
+  "slug": "foxglove-technologies",
+  "specs": [
+   "openapi/_original/foxglove-technologies-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "geotab",
+  "specs": [
+   "openapi/_original/geotab-data-intake-gateway-openapi.yml"
+  ]
+ },
+ {
+  "slug": "goodyear-tire-and-rubber",
+  "specs": [
+   "openapi/_original/gaas-portal.yml",
+   "openapi/_original/sightline-api.yml"
+  ]
+ },
+ {
+  "slug": "here",
+  "specs": [
+   "openapi/_original/here-account-v1-openapi.yml",
+   "openapi/_original/here-account-v1-openapi_2.yml",
+   "openapi/_original/here-api-lookup-v1-openapi.yml",
+   "openapi/_original/here-api-lookup-v1-openapi_2.yml",
+   "openapi/_original/here-authentication-v1-1-openapi.yml",
+   "openapi/_original/here-authentication-v1-1-openapi_2.yml",
+   "openapi/_original/here-authorization-v1-1-openapi.yml",
+   "openapi/_original/here-authorization-v1-1-openapi_2.yml",
+   "openapi/_original/here-cost-management-usage-v2-openapi.yml",
+   "openapi/_original/here-cost-management-usage-v2-openapi_2.yml",
+   "openapi/_original/here-data-blob-v1-openapi.yml",
+   "openapi/_original/here-data-blob-v1-openapi_2.yml",
+   "openapi/_original/here-data-blob-v2-openapi.yml",
+   "openapi/_original/here-data-blob-v2-openapi_2.yml",
+   "openapi/_original/here-data-config-v1-openapi.yml",
+   "openapi/_original/here-data-config-v1-openapi_2.yml",
+   "openapi/_original/here-data-index-v1-openapi.yml",
+   "openapi/_original/here-data-index-v1-openapi_2.yml",
+   "openapi/_original/here-data-ingest-v1-openapi.yml",
+   "openapi/_original/here-data-ingest-v1-openapi_2.yml",
+   "openapi/_original/here-data-metadata-v1-openapi.yml",
+   "openapi/_original/here-data-metadata-v1-openapi_2.yml",
+   "openapi/_original/here-data-notification-v1-openapi.yml",
+   "openapi/_original/here-data-notification-v1-openapi_2.yml",
+   "openapi/_original/here-data-publish-v2-openapi.yml",
+   "openapi/_original/here-data-publish-v2-openapi_2.yml",
+   "openapi/_original/here-data-query-v1-openapi.yml",
+   "openapi/_original/here-data-query-v1-openapi_2.yml",
+   "openapi/_original/here-data-stream-v2-openapi.yml",
+   "openapi/_original/here-data-stream-v2-openapi_2.yml",
+   "openapi/_original/here-data-volatile-blob-v1-openapi.yml",
+   "openapi/_original/here-data-volatile-blob-v1-openapi_2.yml",
+   "openapi/_original/here-destination-weather-v1-openapi.yml",
+   "openapi/_original/here-destination-weather-v1-openapi_2.yml",
+   "openapi/_original/here-destination-weather-v3-openapi.yml",
+   "openapi/_original/here-destination-weather-v3-openapi_2.yml",
+   "openapi/_original/here-ev-charge-points-v3-openapi.yml",
+   "openapi/_original/here-ev-charge-points-v3-openapi_2.yml",
+   "openapi/_original/here-fuel-prices-v2-openapi.yml",
+   "openapi/_original/here-fuel-prices-v2-openapi_2.yml",
+   "openapi/_original/here-fuel-prices-v3-openapi.yml",
+   "openapi/_original/here-fuel-prices-v3-openapi_2.yml",
+   "openapi/_original/here-geocoding-and-search-v7-openapi.json",
+   "openapi/_original/here-geocoding-and-search-v7-openapi_2.json",
+   "openapi/_original/here-geocoding-batch-v7-openapi.yml",
+   "openapi/_original/here-geocoding-batch-v7-openapi_2.yml",
+   "openapi/_original/here-geofencing-v1-openapi.json",
+   "openapi/_original/here-geofencing-v1-openapi_2.json",
+   "openapi/_original/here-gnss-data-v2-openapi.yml",
+   "openapi/_original/here-gnss-data-v2-openapi_2.yml",
+   "openapi/_original/here-indoor-routing-v1-openapi.yml",
+   "openapi/_original/here-indoor-routing-v1-openapi_2.yml",
+   "openapi/_original/here-interactive-map-v1-openapi.yml",
+   "openapi/_original/here-interactive-map-v1-openapi_2.yml",
+   "openapi/_original/here-intermodal-routing-v8-openapi.yml",
+   "openapi/_original/here-intermodal-routing-v8-openapi_2.yml",
+   "openapi/_original/here-isoline-routing-v8-openapi.yml",
+   "openapi/_original/here-isoline-routing-v8-openapi_2.yml",
+   "openapi/_original/here-map-attributes-v1-openapi.json",
+   "openapi/_original/here-map-attributes-v1-openapi_2.json",
+   "openapi/_original/here-map-image-v3-openapi.yml",
+   "openapi/_original/here-map-image-v3-openapi_2.yml",
+   "openapi/_original/here-matrix-routing-v8-openapi.yml",
+   "openapi/_original/here-matrix-routing-v8-openapi_2.yml",
+   "openapi/_original/here-network-positioning-v1-openapi.yml",
+   "openapi/_original/here-network-positioning-v1-openapi_2.yml",
+   "openapi/_original/here-network-positioning-v2-openapi.yml",
+   "openapi/_original/here-network-positioning-v2-openapi_2.yml",
+   "openapi/_original/here-oauth2-token-v1-openapi.yml",
+   "openapi/_original/here-oauth2-token-v1-openapi_2.yml",
+   "openapi/_original/here-pipeline-management-v2-openapi.yml",
+   "openapi/_original/here-pipeline-management-v2-openapi_2.yml",
+   "openapi/_original/here-public-transit-v8-openapi.yml",
+   "openapi/_original/here-public-transit-v8-openapi_2.yml",
+   "openapi/_original/here-raster-tile-v3-openapi.yml",
+   "openapi/_original/here-raster-tile-v3-openapi_2.yml",
+   "openapi/_original/here-rate-limit-rules-v1-openapi.yml",
+   "openapi/_original/here-rate-limit-rules-v1-openapi_2.yml",
+   "openapi/_original/here-route-matching-v8-openapi.json",
+   "openapi/_original/here-route-matching-v8-openapi_2.json",
+   "openapi/_original/here-routing-v8-openapi.yml",
+   "openapi/_original/here-routing-v8-openapi_2.yml",
+   "openapi/_original/here-tour-planning-v3-openapi.yml",
+   "openapi/_original/here-tour-planning-v3-openapi_2.yml",
+   "openapi/_original/here-tracking-v2-openapi.json",
+   "openapi/_original/here-tracking-v2-openapi_2.json",
+   "openapi/_original/here-traffic-raster-tile-v3-openapi.yml",
+   "openapi/_original/here-traffic-raster-tile-v3-openapi_2.yml",
+   "openapi/_original/here-traffic-v7-openapi.yml",
+   "openapi/_original/here-traffic-v7-openapi_2.yml",
+   "openapi/_original/here-traffic-vector-tile-v2-openapi.yml",
+   "openapi/_original/here-traffic-vector-tile-v2-openapi_2.yml",
+   "openapi/_original/here-waypoints-sequence-v1-openapi.json",
+   "openapi/_original/here-waypoints-sequence-v1-openapi_2.json",
+   "openapi/_original/here-wego-user-service-v1-openapi.json",
+   "openapi/_original/here-wego-user-service-v1-openapi_2.json"
+  ]
+ },
+ {
+  "slug": "here-technologies",
+  "specs": [
+   "openapi/_original/here-technologies-openapi.yml"
+  ]
+ },
+ {
+  "slug": "high-mobility",
+  "specs": [
+   "openapi/_original/high-mobility-openapi.yml"
+  ]
+ },
+ {
+  "slug": "inrix",
+  "specs": [
+   "openapi/_original/inrix-parkme-openapi-original.json",
+   "openapi/_original/inrix-signals-analytics-openapi-original.json",
+   "openapi/_original/inrix-user-accounts-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "kardinal",
+  "specs": [
+   "openapi/_original/kardinal-openapi.yml"
+  ]
+ },
+ {
+  "slug": "life360",
+  "specs": [
+   "openapi/_original/life360-openapi-spec.json",
+   "openapi/_original/life360-openapi.yml"
+  ]
+ },
+ {
+  "slug": "loconav",
+  "specs": [
+   "openapi/_original/loconav-integration-openapi.yml"
+  ]
+ },
+ {
+  "slug": "locus-sh",
+  "specs": [
+   "openapi/_original/locus-entities-openapi.yml",
+   "openapi/_original/locus-oms-openapi.yml",
+   "openapi/_original/locus-platform-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lytx",
+  "specs": [
+   "openapi/_original/lytx-consent-openapi.yml",
+   "openapi/_original/lytx-device-openapi.yml",
+   "openapi/_original/lytx-deviceplus-openapi.yml",
+   "openapi/_original/lytx-devicestatusinfoplus-openapi.yml",
+   "openapi/_original/lytx-diagnosticsplus-openapi.yml",
+   "openapi/_original/lytx-distance-openapi.yml",
+   "openapi/_original/lytx-driver.assignment-openapi.yml",
+   "openapi/_original/lytx-driversplus-openapi.yml",
+   "openapi/_original/lytx-dvir-openapi.yml",
+   "openapi/_original/lytx-dvirplus-openapi.yml",
+   "openapi/_original/lytx-ecm-openapi.yml",
+   "openapi/_original/lytx-ecm.v2-openapi.yml",
+   "openapi/_original/lytx-exceptioneventplus-openapi.yml",
+   "openapi/_original/lytx-faultdataplus-openapi.yml",
+   "openapi/_original/lytx-fleetutilizationplus-openapi.yml",
+   "openapi/_original/lytx-geofences-openapi.yml",
+   "openapi/_original/lytx-gps-openapi.yml",
+   "openapi/_original/lytx-gpsplus-openapi.yml",
+   "openapi/_original/lytx-group-openapi.yml",
+   "openapi/_original/lytx-group.v2-openapi.yml",
+   "openapi/_original/lytx-groupplus-openapi.yml",
+   "openapi/_original/lytx-hos-openapi.yml",
+   "openapi/_original/lytx-hosplus-openapi.yml",
+   "openapi/_original/lytx-iftareportplus-openapi.yml",
+   "openapi/_original/lytx-legacy.driversession.services-openapi.yml",
+   "openapi/_original/lytx-legacy.groups-openapi.yml",
+   "openapi/_original/lytx-legacy.hos-openapi.yml",
+   "openapi/_original/lytx-legacy.vehicleinfo.aggregator-openapi.yml",
+   "openapi/_original/lytx-legacy.vehicles-openapi.yml",
+   "openapi/_original/lytx-legacy.videoplatform-openapi.yml",
+   "openapi/_original/lytx-maintenancerecordsplus-openapi.yml",
+   "openapi/_original/lytx-ruleplus-openapi.yml",
+   "openapi/_original/lytx-safety-openapi.yml",
+   "openapi/_original/lytx-statusdataplus-openapi.yml",
+   "openapi/_original/lytx-trips-openapi.yml",
+   "openapi/_original/lytx-tripsplus-openapi.yml",
+   "openapi/_original/lytx-user-openapi.yml",
+   "openapi/_original/lytx-userplus-openapi.yml",
+   "openapi/_original/lytx-vehicles-openapi.yml",
+   "openapi/_original/lytx-video-openapi.yml",
+   "openapi/_original/lytx-zonesplus-openapi.yml",
+   "openapi/_original/lytx-zonesputandpostplus-openapi.yml"
+  ]
+ },
+ {
+  "slug": "markforged",
+  "specs": [
+   "openapi/_original/markforged-openapi.yml"
+  ]
+ },
+ {
+  "slug": "maven-machines",
+  "specs": [
+   "openapi/_original/maven-machines-aaa-cooper-middleware-openapi.json",
+   "openapi/_original/maven-machines-assets-openapi.json",
+   "openapi/_original/maven-machines-averitt-middleware-openapi.json",
+   "openapi/_original/maven-machines-bozzutos-middleware-openapi.json",
+   "openapi/_original/maven-machines-company-locations-openapi.json",
+   "openapi/_original/maven-machines-eld-hos-openapi.json",
+   "openapi/_original/maven-machines-linehaul-openapi.json",
+   "openapi/_original/maven-machines-manifest-commands-openapi.json",
+   "openapi/_original/maven-machines-market-apps-openapi.json",
+   "openapi/_original/maven-machines-messages-openapi.json",
+   "openapi/_original/maven-machines-planning-and-dispatch-openapi.json",
+   "openapi/_original/maven-machines-reddy-ice-middleware-openapi.json",
+   "openapi/_original/maven-machines-reports-openapi.json",
+   "openapi/_original/maven-machines-rest-service-manual-openapi.json",
+   "openapi/_original/maven-machines-roy-miller-middleware-openapi.json",
+   "openapi/_original/maven-machines-shipment-locations-openapi.json",
+   "openapi/_original/maven-machines-shipments-openapi.json",
+   "openapi/_original/maven-machines-smart-openapi.json",
+   "openapi/_original/maven-machines-triple-s-steel-middleware-openapi.json",
+   "openapi/_original/maven-machines-users-openapi.json",
+   "openapi/_original/maven-machines-workflow-openapi.json"
+  ]
+ },
+ {
+  "slug": "mercedes-me",
+  "specs": [
+   "openapi/_original/mercedes-me-configurator-api-openapi.yml",
+   "openapi/_original/mercedes-me-dealer-api-openapi.yml",
+   "openapi/_original/mercedes-me-remote-diagnostic-support-api-openapi.yml",
+   "openapi/_original/mercedes-me-vehicle-images-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "mileiq",
+  "specs": [
+   "openapi/_original/mileiq-external-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "nash",
+  "specs": [
+   "openapi/_original/nash-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "onerail",
+  "specs": [
+   "openapi/_original/onerail-delivery-api-openapi.json",
+   "openapi/_original/onerail-operations-api-openapi.json",
+   "openapi/_original/onerail-operations-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "optibus",
+  "specs": [
+   "openapi/_original/optibus-operations-openapi.yml"
+  ]
+ },
+ {
+  "slug": "otonomo",
+  "specs": [
+   "openapi/_original/otonomo-fleet-openapi.yml"
+  ]
+ },
+ {
+  "slug": "particle",
+  "specs": [
+   "openapi/_original/particle-cloud-api-openapi.yml",
+   "openapi/_original/particle-openapi.yml"
+  ]
+ },
+ {
+  "slug": "picker",
+  "specs": [
+   "openapi/_original/picker-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "revvo",
+  "specs": [
+   "openapi/_original/revvo-api-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "root",
+  "specs": [
+   "openapi/_original/root-platform-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "routific",
+  "specs": [
+   "openapi/_original/routific-route-optimization-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "runbuggy",
+  "specs": [
+   "openapi/_original/runbuggy-authentication.json",
+   "openapi/_original/runbuggy-companies.json",
+   "openapi/_original/runbuggy-orders.json"
+  ]
+ },
+ {
+  "slug": "ryder-system",
+  "specs": [
+   "openapi/_original/ryder-carrier-api-openapi.yml",
+   "openapi/_original/ryder-fleet-management-api-openapi.yml",
+   "openapi/_original/ryder-tm-shipment-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "samsara",
+  "specs": [
+   "openapi/_original/samsara-openapi.yml"
+  ]
+ },
+ {
+  "slug": "scale-computing",
+  "specs": [
+   "openapi/_original/scale-computing-core-openapi.json",
+   "openapi/_original/scale-computing-fleet-manager-openapi.json",
+   "openapi/_original/scale-computing-fleet-manager-v2-openapi-original.json",
+   "openapi/_original/scale-computing-swagger-original.json"
+  ]
+ },
+ {
+  "slug": "sertica",
+  "specs": [
+   "openapi/_original/sertica-web-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "shell",
+  "specs": [
+   "openapi/_original/shell-b2b-mobility-openapi.yml",
+   "openapi/_original/shell-loyalty-openapi.yml",
+   "openapi/_original/shell-lubricants-openapi.yml"
+  ]
+ },
+ {
+  "slug": "shiftmove",
+  "specs": [
+   "openapi/_original/shiftmove-fleet-openapi.json"
+  ]
+ },
+ {
+  "slug": "silvercar",
+  "specs": [
+   "openapi/_original/silvercar-mob-api-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "skydio",
+  "specs": [
+   "openapi/_original/skydio-openapi.yml"
+  ]
+ },
+ {
+  "slug": "smartcar",
+  "specs": [
+   "openapi/_original/smartcar-vehicles-openapi.yml"
+  ]
+ },
+ {
+  "slug": "switchlabs",
+  "specs": [
+   "openapi/_original/crm-switchlabs-openapi.json"
+  ]
+ },
+ {
+  "slug": "tekmetric",
+  "specs": [
+   "openapi/_original/tekmetric-openapi.yml"
+  ]
+ },
+ {
+  "slug": "toro",
+  "specs": [
+   "openapi/_original/toro-horizon360-openapi.yml",
+   "openapi/_original/toro-intellidash-openapi.yml"
+  ]
+ },
+ {
+  "slug": "toyota",
+  "specs": [
+   "openapi/_original/toyota-connected-services-openapi.yml",
+   "openapi/_original/toyota-telematics-openapi.yml"
+  ]
+ },
+ {
+  "slug": "track-pod",
+  "specs": [
+   "openapi/_original/track-pod-openapi.yml"
+  ]
+ },
+ {
+  "slug": "travelcenters-of-america",
+  "specs": [
+   "openapi/_original/travelcenters-of-america-openapi.yml"
+  ]
+ },
+ {
+  "slug": "travelers",
+  "specs": [
+   "openapi/_original/travelers-openapi.yml"
+  ]
+ },
+ {
+  "slug": "treadio",
+  "specs": [
+   "openapi/_original/treadio-horizon-openapi.json"
+  ]
+ },
+ {
+  "slug": "trimble",
+  "specs": [
+   "openapi/_original/trimble-connect-openapi.yml",
+   "openapi/_original/trimble-maps-openapi.yml"
+  ]
+ },
+ {
+  "slug": "trimble-agriculture",
+  "specs": [
+   "openapi/_original/trimble-agriculture-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tronity",
+  "specs": [
+   "openapi/_original/tronity-openapi.yml"
+  ]
+ },
+ {
+  "slug": "uveye",
+  "specs": [
+   "openapi/_original/uveye-public-api-v1-openapi.yml"
+  ]
+ },
+ {
+  "slug": "viam",
+  "specs": [
+   "openapi/_original/viam-billing-api-openapi.yml",
+   "openapi/_original/viam-component-apis-openapi.yml",
+   "openapi/_original/viam-data-client-api-openapi.yml",
+   "openapi/_original/viam-data-pipelines-api-openapi.yml",
+   "openapi/_original/viam-data-sync-api-openapi.yml",
+   "openapi/_original/viam-fleet-management-api-openapi.yml",
+   "openapi/_original/viam-machine-management-api-openapi.yml",
+   "openapi/_original/viam-ml-inference-api-openapi.yml",
+   "openapi/_original/viam-ml-model-service-api-openapi.yml",
+   "openapi/_original/viam-ml-training-api-openapi.yml",
+   "openapi/_original/viam-motion-service-api-openapi.yml",
+   "openapi/_original/viam-slam-service-api-openapi.yml",
+   "openapi/_original/viam-vision-service-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "viridi-parente",
+  "specs": [
+   "openapi/_original/viridi-parente-vista-openapi.json",
+   "openapi/_original/viridi-parente-vista-openapi_2.json"
+  ]
+ },
+ {
+  "slug": "visteon",
+  "specs": [
+   "openapi/_original/visteon-phoenix-openapi.yml"
+  ]
+ },
+ {
+  "slug": "volteras",
+  "specs": [
+   "openapi/_original/volteras-connect-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "workwave",
+  "specs": [
+   "openapi/_original/workwave-openapi.yml"
+  ]
+ },
+ {
+  "slug": "zego",
+  "specs": [
+   "openapi/_original/zego-partner-openapi.yml"
+  ]
+ }
+]
